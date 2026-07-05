@@ -1,5 +1,99 @@
-<mask id="drawMask">
-  <path class="drawing-path" d="..." />
-</mask>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victor Wyld</title>
 
-<path class="perfect-tilde-shape" mask="url(#drawMask)" d="..." />
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #000000;
+    }
+
+    .tilde {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 36rem;
+      font-weight: normal;
+      line-height: 1;
+      color: #111111;
+      opacity: 0;
+      transform: translateY(-6vh);
+      animation:
+        fadeIn 3s ease forwards,
+        fadeOut 7.2s ease forwards;
+      animation-delay:
+        0s,
+        5s;
+    }
+
+    .main {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 4rem;
+      line-height: 1;
+      color: #000000;
+      opacity: 0;
+      transform: translateY(-2vh);
+      animation: fadeIn 1.2s ease forwards;
+      animation-delay: 12.2s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .tilde {
+        font-size: 24rem;
+        transform: translateY(-6vh);
+      }
+
+      .main {
+        font-size: 3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tilde">~</div>
+
+  <main class="main">
+    Victor Wyld
+  </main>
+</body>
+</html>
