@@ -10,41 +10,34 @@
       margin: 0;
       width: 100%;
       height: 100%;
+      background: #ffffff;
       overflow: hidden;
-      background: white;
-      font-family: Georgia, serif;
     }
 
-    .tilde-wrap {
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #000000;
+    }
+
+    .tilde {
       position: fixed;
       inset: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      transform: translateY(-4vh);
-      animation: fadeOut 2.4s ease forwards;
-      animation-delay: 4.05s;
-    }
-
-    .tilde-svg {
-      width: 46vw;
-      max-width: 620px;
-      min-width: 260px;
-    }
-
-    .tilde-path {
-      fill: none;
-      stroke: #111;
-      stroke-width: 28;
-
-      /* IMPORTANT: sharp ends */
-      stroke-linecap: butt;
-      stroke-linejoin: miter;
-
-      stroke-dasharray: 1000;
-      stroke-dashoffset: 1000;
-
-      animation: draw 3.84s ease forwards;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 36rem;
+      font-weight: normal;
+      line-height: 1;
+      color: #111111;
+      opacity: 0;
+      transform: translateY(-6vh);
+      animation:
+        fadeIn 3s ease forwards,
+        fadeOut 7.2s ease forwards;
+      animation-delay:
+        0s,
+        5s;
     }
 
     .main {
@@ -53,45 +46,54 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: Georgia, "Times New Roman", serif;
       font-size: 4rem;
+      line-height: 1;
+      color: #000000;
       opacity: 0;
-      animation: fadeIn 1.2s ease forwards;
-      animation-delay: 6.45s;
       transform: translateY(-2vh);
-    }
-
-    @keyframes draw {
-      to { stroke-dashoffset: 0; }
-    }
-
-    @keyframes fadeOut {
-      to { opacity: 0; }
+      animation: fadeIn 1.2s ease forwards;
+      animation-delay: 12.2s;
     }
 
     @keyframes fadeIn {
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
     }
 
     @media (max-width: 600px) {
-      .main { font-size: 3rem; }
+      .tilde {
+        font-size: 24rem;
+        transform: translateY(-6vh);
+      }
+
+      .main {
+        font-size: 3rem;
+      }
     }
   </style>
 </head>
 
 <body>
+  <div class="tilde">~</div>
 
-  <div class="tilde-wrap">
-    <svg class="tilde-svg" viewBox="0 0 500 200">
-      <path
-        class="tilde-path"
-        d="M40 130
-           C 110 40, 170 40, 250 110
-           C 330 180, 390 180, 460 90"
-      />
-    </svg>
-  </div>
-
-  <div class="main">Victor Wyld</div>
-
+  <main class="main">
+    Victor Wyld
+  </main>
 </body>
 </html>
