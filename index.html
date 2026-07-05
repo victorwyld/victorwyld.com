@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Victor Wyld</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: white;
+      overflow: hidden;
+    }
+
+    .tilde {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, serif;
+      font-size: 12rem;
+      color: black;
+      animation: fadeOut 3s ease forwards;
+      animation-delay: 2s;
+    }
+
+    .main {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, serif;
+      font-size: 2rem;
+      opacity: 0;
+      animation: fadeIn 2s ease forwards;
+      animation-delay: 5s;
+    }
+
+    @keyframes fadeOut {
+      to { opacity: 0; }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="tilde">~</div>
+  <div class="main">Victor Wyld</div>
+</body>
+</html>
