@@ -19,24 +19,35 @@
       color: black;
     }
 
-    .tilde {
+    .tilde-wrap {
       position: fixed;
       inset: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Georgia, serif;
-      font-size: 36rem;
-      line-height: 1;
-      color: black;
-      opacity: 0;
       transform: translateY(-6vh);
-      animation:
-        fadeIn 3s ease forwards,
-        fadeOut 7.2s ease forwards;
-      animation-delay:
-        0s,
-        5s;
+      opacity: 1;
+      animation: fadeOut 7.2s ease forwards;
+      animation-delay: 5s;
+    }
+
+    .tilde-svg {
+      width: 42vw;
+      max-width: 620px;
+      min-width: 260px;
+      height: auto;
+      overflow: visible;
+    }
+
+    .tilde-path {
+      fill: none;
+      stroke: black;
+      stroke-width: 34;
+      stroke-linecap: butt;
+      stroke-linejoin: round;
+      stroke-dasharray: 900;
+      stroke-dashoffset: 900;
+      animation: drawTilde 3s ease forwards;
     }
 
     .main {
@@ -52,6 +63,16 @@
       opacity: 0;
       animation: fadeIn 3s ease forwards;
       animation-delay: 12.2s;
+    }
+
+    @keyframes drawTilde {
+      from {
+        stroke-dashoffset: 900;
+      }
+
+      to {
+        stroke-dashoffset: 0;
+      }
     }
 
     @keyframes fadeIn {
@@ -75,9 +96,13 @@
     }
 
     @media (max-width: 600px) {
-      .tilde {
-        font-size: 24rem;
-        transform: translateY(-6vh);
+      .tilde-svg {
+        width: 60vw;
+        min-width: 220px;
+      }
+
+      .tilde-path {
+        stroke-width: 38;
       }
 
       .main {
@@ -88,7 +113,14 @@
 </head>
 
 <body>
-  <div class="tilde">~</div>
+  <div class="tilde-wrap" aria-hidden="true">
+    <svg class="tilde-svg" viewBox="0 0 500 220">
+      <path
+        class="tilde-path"
+        d="M45 130 C115 55, 190 55, 250 115 C310 175, 385 175, 455 90"
+      />
+    </svg>
+  </div>
 
   <main class="main">
     Victor Wyld
