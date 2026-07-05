@@ -36,20 +36,17 @@
       width: 44vw;
       max-width: 620px;
       min-width: 260px;
+      height: auto;
       overflow: visible;
     }
 
-    .tilde-path {
-      fill: none;
-      stroke: #111111;
-      stroke-width: 30;
-      stroke-linecap: butt;
-      stroke-linejoin: miter;
+    .tilde-shape {
+      fill: #111111;
+      clip-path: url(#tildeReveal);
+    }
 
-      stroke-dasharray: 1000;
-      stroke-dashoffset: 1000;
-
-      animation: drawTilde 3.84s ease forwards;
+    .reveal-rect {
+      animation: revealTilde 3.84s ease forwards;
     }
 
     .main {
@@ -67,9 +64,13 @@
       transform: translateY(-2vh);
     }
 
-    @keyframes drawTilde {
+    @keyframes revealTilde {
+      from {
+        width: 0;
+      }
+
       to {
-        stroke-dashoffset: 0;
+        width: 500px;
       }
     }
 
@@ -103,10 +104,6 @@
         min-width: 220px;
       }
 
-      .tilde-path {
-        stroke-width: 30;
-      }
-
       .main {
         font-size: 3rem;
       }
@@ -118,10 +115,28 @@
 
   <div class="tilde-wrap" aria-hidden="true">
     <svg class="tilde-svg" viewBox="0 0 500 220">
+      <defs>
+        <clipPath id="tildeReveal">
+          <rect class="reveal-rect" x="0" y="0" width="0" height="220"></rect>
+        </clipPath>
+      </defs>
+
       <path
-        class="tilde-path"
-        pathLength="1000"
-        d="M45 130 C115 55, 190 55, 250 115 C310 175, 385 175, 455 90"
+        class="tilde-shape"
+        d="
+          M 42 139
+          C 70 93, 103 65, 139 62
+          C 178 59, 211 82, 245 113
+          C 279 144, 310 166, 348 160
+          C 386 154, 420 119, 456 74
+
+          L 466 80
+          C 434 132, 396 174, 350 184
+          C 302 194, 263 165, 226 131
+          C 191 99, 165 82, 136 86
+          C 107 90, 81 113, 55 153
+          Z
+        "
       />
     </svg>
   </div>
