@@ -11,12 +11,8 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
-      background: #ffffff;
+      background: white;
       font-family: Georgia, serif;
-    }
-
-    body {
-      position: relative;
     }
 
     .tilde-wrap {
@@ -25,28 +21,30 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      z-index: 2;
-      pointer-events: none;
       transform: translateY(-4vh);
-      animation: tildeFadeOut 2.4s ease forwards;
+      animation: fadeOut 2.4s ease forwards;
       animation-delay: 4.05s;
     }
 
     .tilde-svg {
-      width: 44vw;
+      width: 46vw;
       max-width: 620px;
       min-width: 260px;
-      height: auto;
-      overflow: visible;
     }
 
-    .tilde-shape {
-      fill: #111111;
-      clip-path: url(#tildeReveal);
-    }
+    .tilde-path {
+      fill: none;
+      stroke: #111;
+      stroke-width: 28;
 
-    .reveal-rect {
-      animation: revealTilde 3.84s ease forwards;
+      /* IMPORTANT: sharp ends */
+      stroke-linecap: butt;
+      stroke-linejoin: miter;
+
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+
+      animation: draw 3.84s ease forwards;
     }
 
     .main {
@@ -55,93 +53,45 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      z-index: 1;
-      color: #000000;
       font-size: 4rem;
       opacity: 0;
-      animation: textFadeIn 1.2s ease forwards;
+      animation: fadeIn 1.2s ease forwards;
       animation-delay: 6.45s;
       transform: translateY(-2vh);
     }
 
-    @keyframes revealTilde {
-      from {
-        width: 0;
-      }
-
-      to {
-        width: 500px;
-      }
+    @keyframes draw {
+      to { stroke-dashoffset: 0; }
     }
 
-    @keyframes tildeFadeOut {
-      from {
-        opacity: 1;
-      }
-
-      to {
-        opacity: 0;
-      }
+    @keyframes fadeOut {
+      to { opacity: 0; }
     }
 
-    @keyframes textFadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
 
     @media (max-width: 600px) {
-      .tilde-wrap {
-        transform: translateY(-5vh);
-      }
-
-      .tilde-svg {
-        width: 62vw;
-        min-width: 220px;
-      }
-
-      .main {
-        font-size: 3rem;
-      }
+      .main { font-size: 3rem; }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="tilde-wrap" aria-hidden="true">
-    <svg class="tilde-svg" viewBox="0 0 500 220">
-      <defs>
-        <clipPath id="tildeReveal">
-          <rect class="reveal-rect" x="0" y="0" width="0" height="220"></rect>
-        </clipPath>
-      </defs>
-
+  <div class="tilde-wrap">
+    <svg class="tilde-svg" viewBox="0 0 500 200">
       <path
-        class="tilde-shape"
-        d="
-          M 42 139
-          C 70 93, 103 65, 139 62
-          C 178 59, 211 82, 245 113
-          C 279 144, 310 166, 348 160
-          C 386 154, 420 119, 456 74
-
-          L 466 80
-          C 434 132, 396 174, 350 184
-          C 302 194, 263 165, 226 131
-          C 191 99, 165 82, 136 86
-          C 107 90, 81 113, 55 153
-          Z
-        "
+        class="tilde-path"
+        d="M40 130
+           C 110 40, 170 40, 250 110
+           C 330 180, 390 180, 460 90"
       />
     </svg>
   </div>
 
-  <main class="main">Victor Wyld</main>
+  <div class="main">Victor Wyld</div>
 
 </body>
 </html>
