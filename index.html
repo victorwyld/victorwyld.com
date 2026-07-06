@@ -28,11 +28,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 48rem;
-      font-weight: normal;
-      line-height: 1;
-      color: #111111;
 
       opacity: 0;
       transform: translateY(-6vh);
@@ -44,6 +39,16 @@
       animation-delay:
         0s,
         6.5s; /* 3.5s fade in + 3s hold */
+    }
+
+    .tilde-svg {
+      width: clamp(360px, 58vw, 820px);
+      height: auto;
+      display: block;
+    }
+
+    .tilde-path {
+      fill: #111111;
     }
 
     /* =========================
@@ -88,8 +93,11 @@
     ========================== */
     @media (max-width: 600px) {
       .tilde {
-        font-size: 24rem;
         transform: translateY(-6vh);
+      }
+
+      .tilde-svg {
+        width: min(78vw, 430px);
       }
 
       .main {
@@ -100,7 +108,27 @@
 </head>
 
 <body>
-  <div class="tilde">~</div>
+  <div class="tilde" aria-hidden="true">
+    <svg class="tilde-svg" viewBox="0 0 540 240" xmlns="http://www.w3.org/2000/svg">
+      <path
+        class="tilde-path"
+        d="
+          M 30 146
+          C 78 83, 123 56, 173 58
+          C 216 60, 251 89, 292 122
+          C 330 152, 360 167, 394 164
+          C 430 161, 461 133, 494 87
+
+          L 508 95
+          C 474 149, 441 183, 396 188
+          C 349 193, 311 175, 269 142
+          C 230 110, 200 89, 168 84
+          C 129 78, 88 98, 44 160
+          Z
+        "
+      />
+    </svg>
+  </div>
 
   <main class="main">
     Victor Wyld
