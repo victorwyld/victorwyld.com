@@ -19,6 +19,9 @@
       color: #000000;
     }
 
+    /* =========================
+       TILDE
+    ========================== */
     .tilde {
       position: fixed;
       inset: 0;
@@ -26,20 +29,27 @@
       align-items: center;
       justify-content: center;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 46rem;
+      font-size: 36rem;
       font-weight: normal;
       line-height: 1;
       color: #111111;
+
       opacity: 0;
       transform: translateY(-6vh);
+
       animation:
-        fadeIn 4s ease forwards,
-        fadeOut 7.2s ease forwards;
+        fadeIn 2.5s ease forwards,
+        fadeOut 2.5s ease forwards;
+
       animation-delay:
         0s,
-        2s;
+        5.5s; /* 2.5s fade in + 3s hold */
     }
 
+    /* =========================
+       MAIN TEXT
+       overlaps fade-out
+    ========================== */
     .main {
       position: fixed;
       inset: 0;
@@ -50,32 +60,32 @@
       font-size: 4rem;
       line-height: 1;
       color: #000000;
+
       opacity: 0;
       transform: translateY(-2vh);
-      animation: fadeIn 1.2s ease forwards;
-      animation-delay: 12.2s;
+
+      animation: fadeIn 2.5s ease forwards;
+
+      /* starts BEFORE tilde fully disappears */
+      animation-delay: 6.5s;
     }
 
+    /* =========================
+       ANIMATIONS
+    ========================== */
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     @keyframes fadeOut {
-      from {
-        opacity: 1;
-      }
-
-      to {
-        opacity: 0;
-      }
+      from { opacity: 1; }
+      to { opacity: 0; }
     }
 
+    /* =========================
+       MOBILE
+    ========================== */
     @media (max-width: 600px) {
       .tilde {
         font-size: 24rem;
