@@ -28,46 +28,27 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 36rem;
+      font-weight: normal;
+      line-height: 1;
+      color: #111111;
 
       opacity: 0;
       transform: translateY(-6vh);
 
       animation:
-        fadeIn 3.5s ease forwards,
-        fadeOut 3.5s ease forwards;
+        fadeIn 2.5s ease forwards,
+        fadeOut 2.5s ease forwards;
 
       animation-delay:
         0s,
-        6.5s; /* 3.5s fade in + 3s hold */
-    }
-
-    .tilde-svg {
-      width: 58vw;
-      max-width: 900px;
-      min-width: 280px;
-      height: auto;
-    }
-
-    .tilde-path {
-      fill: none;
-
-      /* HEAVY STROKE */
-      stroke: #111111;
-      stroke-width: 42;
-
-      /* THIS IS THE IMPORTANT PART */
-      stroke-linecap: square;   /* sharp ends */
-      stroke-linejoin: miter;   /* sharp angles */
-      stroke-miterlimit: 1;     /* forces hard points */
-
-      stroke-dasharray: 1200;
-      stroke-dashoffset: 1200;
-
-      animation: draw 3.5s ease forwards;
+        5.5s; /* 2.5s fade in + 3s hold */
     }
 
     /* =========================
        MAIN TEXT
+       overlaps fade-out
     ========================== */
     .main {
       position: fixed;
@@ -75,8 +56,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
-      font-size: 3rem;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 4rem;
       line-height: 1;
       color: #000000;
 
@@ -84,7 +65,9 @@
       transform: translateY(-2vh);
 
       animation: fadeIn 2.5s ease forwards;
-      animation-delay: 9.0s;
+
+      /* starts BEFORE tilde fully disappears */
+      animation-delay: 6.5s;
     }
 
     /* =========================
@@ -100,17 +83,13 @@
       to { opacity: 0; }
     }
 
-    @keyframes draw {
-      from { stroke-dashoffset: 1200; }
-      to { stroke-dashoffset: 0; }
-    }
-
     /* =========================
        MOBILE
     ========================== */
     @media (max-width: 600px) {
-      .tilde-svg {
-        width: 78vw;
+      .tilde {
+        font-size: 24rem;
+        transform: translateY(-6vh);
       }
 
       .main {
@@ -121,22 +100,10 @@
 </head>
 
 <body>
-
-  <div class="tilde" aria-hidden="true">
-    <svg class="tilde-svg" viewBox="0 0 600 240">
-      <path class="tilde-path"
-        d="
-          M 40 150
-          C 120 40, 200 40, 300 150
-          C 400 260, 480 260, 560 90
-        "
-      />
-    </svg>
-  </div>
+  <div class="tilde">~</div>
 
   <main class="main">
     Victor Wyld
   </main>
-
 </body>
 </html>
