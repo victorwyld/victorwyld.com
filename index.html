@@ -42,7 +42,7 @@
         fadeOut 3.5s ease forwards;
 
       animation-delay:
-        0s,
+        1s,
         6.5s; /* 3.5s fade in + 3s hold */
     }
 
@@ -57,17 +57,17 @@
       align-items: center;
       justify-content: center;
       font-family: Georgia, "Times New Roman", serif;
-      font-size: 3rem;
+      font-size: 4rem;
       line-height: 1;
       color: #000000;
 
       opacity: 0;
       transform: translateY(-2vh);
 
-      animation: fadeIn 3.5s ease forwards;
+      animation: fadeIn 2.5s ease forwards;
 
       /* starts BEFORE tilde fully disappears */
-      animation-delay: 8.0s;
+      animation-delay: 6.5s;
     }
 
     /* =========================
@@ -88,7 +88,7 @@
     ========================== */
     @media (max-width: 600px) {
       .tilde {
-        font-size: 16rem;
+        font-size: 24rem;
         transform: translateY(-6vh);
       }
 
