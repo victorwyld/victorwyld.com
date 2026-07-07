@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://victorwyld.com/sitemap.xml
+LLMs: https://victorwyld.com/llms.txt
