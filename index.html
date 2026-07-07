@@ -4,272 +4,164 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Work | Victor Wyld</title>
-  <meta name="description" content="Published books, papers, and essays by Victor Wyld, including Scrutinized Awareness Theory, Recognition and Routing, and The Provenance of Desire.">
+  <title>Victor Wyld</title>
+  <meta name="description" content="Victor Wyld is an independent Canadian philosopher and author working on consciousness, participation, recognition, and ethical responsibility.">
 
-  <link rel="canonical" href="https://victorwyld.com/work/">
+  <link rel="canonical" href="https://victorwyld.com/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-  <meta property="og:title" content="Work | Victor Wyld">
-  <meta property="og:description" content="Published books, papers, and essays by Victor Wyld, including Scrutinized Awareness Theory, Recognition and Routing, and The Provenance of Desire.">
+  <meta property="og:title" content="Victor Wyld">
+  <meta property="og:description" content="Victor Wyld is an independent Canadian philosopher and author working on consciousness, participation, recognition, and ethical responsibility.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://victorwyld.com/work/">
+  <meta property="og:url" content="https://victorwyld.com/">
   <meta property="og:site_name" content="Victor Wyld">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Work | Victor Wyld">
-  <meta name="twitter:description" content="Published books, papers, and essays by Victor Wyld, including Scrutinized Awareness Theory, Recognition and Routing, and The Provenance of Desire.">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Work | Victor Wyld",
-    "headline": "Published Work by Victor Wyld",
-    "url": "https://victorwyld.com/work/",
-    "description": "Published books, papers, and essays by Victor Wyld.",
-    "about": {
-      "@type": "Person",
-      "name": "Victor Wyld",
-      "url": "https://victorwyld.com/",
-      "description": "Victor Wyld is an independent Canadian philosopher and author whose work explores consciousness, participation, recognition, and ethical responsibility."
-    },
-    "keywords": [
-      "Victor Wyld",
-      "Scrutinized Awareness Theory",
-      "Recognition and Routing",
-      "The Provenance of Desire",
-      "consciousness",
-      "participation",
-      "recognition",
-      "artificial intelligence",
-      "ethical responsibility",
-      "classification",
-      "moral standing"
-    ],
-    "hasPart": [
-      {
-        "@type": "ScholarlyArticle",
-        "name": "On the Question of Scrutinized Awareness",
-        "alternateName": "Scrutinized Awareness Theory",
-        "author": {
-          "@type": "Person",
-          "name": "Victor Wyld"
-        },
-        "about": [
-          "consciousness",
-          "philosophy of mind",
-          "artificial intelligence",
-          "participation",
-          "answerability"
-        ]
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "name": "The Recompression Problem",
-        "author": {
-          "@type": "Person",
-          "name": "Victor Wyld"
-        },
-        "about": [
-          "consciousness",
-          "scrutinized awareness",
-          "classification",
-          "recognition",
-          "institutional difficulty"
-        ]
-      },
-      {
-        "@type": "Book",
-        "name": "Recognition and Routing: Essays on Systems, Classification, and Standing",
-        "author": {
-          "@type": "Person",
-          "name": "Victor Wyld"
-        },
-        "about": [
-          "recognition",
-          "classification",
-          "systems",
-          "standing",
-          "neutrality"
-        ]
-      },
-      {
-        "@type": "Book",
-        "name": "The Provenance of Desire: The Most Significant Collectibles of All Time",
-        "author": {
-          "@type": "Person",
-          "name": "Victor Wyld"
-        },
-        "about": [
-          "collectibles",
-          "provenance",
-          "value",
-          "recognition",
-          "cultural meaning"
-        ]
-      }
-    ],
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "Victor Wyld",
-      "url": "https://victorwyld.com/"
-    }
-  }
-  </script>
+  <meta name="twitter:title" content="Victor Wyld">
+  <meta name="twitter:description" content="Victor Wyld is an independent Canadian philosopher and author working on consciousness, participation, recognition, and ethical responsibility.">
 
   <style>
     html, body {
       margin: 0;
-      min-height: 100%;
+      width: 100%;
+      height: 100%;
       background: #ffffff;
+      overflow: hidden;
     }
 
     body {
       font-family: Georgia, "Times New Roman", serif;
       color: #000000;
-      line-height: 1.55;
     }
 
-    main {
-      max-width: 820px;
-      margin: 12vh auto;
-      padding: 0 2rem 6rem;
-    }
-
-    h1 {
-      font-size: 2.8rem;
+    /* =========================
+       TILDE
+    ========================== */
+    .tilde {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 48rem;
       font-weight: normal;
-      line-height: 1.1;
-      margin: 0 0 2.5rem;
+      line-height: 1;
+      color: #111111;
+
+      opacity: 0;
+      transform: translateY(-9vh);
+
+      animation:
+        fadeIn 4.5s ease forwards,
+        fadeOut 4.5s ease forwards;
+
+      animation-delay:
+        1s,
+        7.5s;
     }
 
-    h2 {
-      font-size: 1.35rem;
-      font-weight: normal;
-      margin: 3rem 0 1rem;
+    /* =========================
+       MAIN TEXT
+       overlaps fade-out
+    ========================== */
+    .main {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 3rem;
+      line-height: 1;
+      color: #000000;
+
+      opacity: 0;
+      transform: translateY(-2vh);
+
+      animation: fadeIn 3.5s ease forwards;
+      animation-delay: 7.5s;
     }
 
-    p {
-      font-size: 1.12rem;
-      margin: 0 0 1.35rem;
+    /* =========================
+       NAVIGATION
+    ========================== */
+    .nav {
+      position: fixed;
+      bottom: 2rem;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.85rem;
+      z-index: 10;
+
+      opacity: 0;
+      animation: fadeIn 3.5s ease forwards;
+      animation-delay: 10.5s;
     }
 
-    .item {
-      margin-bottom: 2rem;
-    }
-
-    .title {
-      font-size: 1.18rem;
-      margin-bottom: 0.35rem;
-    }
-
-    .meta {
-      opacity: 0.62;
-      font-size: 1rem;
-      margin-bottom: 0.55rem;
-    }
-
-    .quiet {
-      opacity: 0.72;
-    }
-
-    nav {
-      margin-top: 3.5rem;
-      font-size: 0.95rem;
-    }
-
-    nav a {
+    .nav a {
       color: #000000;
       text-decoration: none;
-      margin-right: 1.1rem;
-      opacity: 0.55;
-      border-bottom: 1px solid rgba(0,0,0,0.25);
+      margin: 0 0.75rem;
+      opacity: 0.45;
+      transition: opacity 0.4s ease;
     }
 
-    nav a:hover {
+    .nav a:hover {
       opacity: 1;
     }
 
+    /* =========================
+       ANIMATIONS
+    ========================== */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeOut {
+      from { opacity: 1; }
+      to { opacity: 0; }
+    }
+
+    /* =========================
+       MOBILE
+    ========================== */
     @media (max-width: 600px) {
-      main {
-        margin: 9vh auto;
-        padding: 0 1.5rem 5rem;
+      .tilde {
+        font-size: 24rem;
+        transform: translateY(-6vh);
       }
 
-      h1 {
-        font-size: 2.3rem;
+      .main {
+        font-size: 3rem;
       }
 
-      p {
-        font-size: 1.05rem;
+      .nav {
+        bottom: 1.5rem;
+        font-size: 0.8rem;
       }
 
-      nav a {
-        display: inline-block;
-        margin: 0 0.9rem 0.75rem 0;
+      .nav a {
+        margin: 0 0.4rem;
       }
     }
   </style>
 </head>
 
 <body>
-  <main>
-    <h1>Work</h1>
+  <div class="tilde" aria-hidden="true">~</div>
 
-    <p>
-      Victor Wyld’s published work moves between philosophy, systems analysis, recognition, classification, and cultural value.
-    </p>
-
-    <p>
-      Across these works, the central concern is how awareness, recognition, participation, and responsibility become structurally entangled.
-    </p>
-
-    <h2>Philosophy</h2>
-
-    <section class="item">
-      <p class="title"><em>On the Question of Scrutinized Awareness</em></p>
-      <p class="meta">Scrutinized Awareness Theory</p>
-      <p>
-        A philosophical inquiry into awareness, scrutiny, participation, and interiority. The paper argues that consciousness cannot be reduced to information processing, recognition, or performance alone. Awareness becomes consciousness when it becomes something the participant must carry.
-      </p>
-    </section>
-
-    <section class="item">
-      <p class="title"><em>The Recompression Problem</em></p>
-      <p class="meta">The hard problem, scrutinized awareness, and the institutional life of difficulty</p>
-      <p>
-        A study of how difficult philosophical distinctions are often compressed back into familiar categories. The work examines how consciousness, recognition, and moral standing are repeatedly simplified into checklists, mechanisms, or institutional labels.
-      </p>
-    </section>
-
-    <h2>Books and Essays</h2>
-
-    <section class="item">
-      <p class="title"><em>Recognition and Routing: Essays on Systems, Classification, and Standing</em></p>
-      <p class="meta">Essays</p>
-      <p>
-        A collection of essays on classification, assigned value, recognition, neutrality, systems, correction, and the ways persons and objects are routed through institutional structures.
-      </p>
-    </section>
-
-    <section class="item">
-      <p class="title"><em>The Provenance of Desire: The Most Significant Collectibles of All Time</em></p>
-      <p class="meta">Nonfiction</p>
-      <p>
-        A study of collectibles, value, provenance, recognition, and cultural meaning. The book examines why certain objects become historically and emotionally charged while others remain unseen.
-      </p>
-    </section>
-
-    <p class="quiet">
-      The work asks, in different forms, when awareness, value, or standing becomes something that can no longer be treated as merely assigned from the outside.
-    </p>
-
-    <nav aria-label="Main navigation">
-      <a href="/">Home</a>
-      <a href="/about/">About</a>
-      <a href="/scrutinized-awareness/">Scrutinized Awareness</a>
-    </nav>
+  <main class="main">
+    Victor Wyld
   </main>
+
+  <nav class="nav" aria-label="Main navigation">
+    <a href="/about/">About</a>
+    <a href="/work/">Work</a>
+    <a href="/scrutinized-awareness/">Scrutinized Awareness</a>
+  </nav>
 </body>
 </html>
