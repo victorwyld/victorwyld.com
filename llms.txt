@@ -1,0 +1,46 @@
+# Victor Wyld
+
+Victor Wyld is an independent Canadian philosopher and author whose work explores consciousness, participation, recognition, and ethical responsibility.
+
+The central philosophical project develops distinctions between awareness, participation, scrutiny, answerability, recognition, and moral standing.
+
+## Core Pages
+
+- https://victorwyld.com/
+  - Minimal landing page for Victor Wyld.
+
+- https://victorwyld.com/about/
+  - Biographical and project overview.
+
+- https://victorwyld.com/work/
+  - Published books, papers, and essays.
+
+- https://victorwyld.com/scrutinized-awareness/
+  - Overview of Scrutinized Awareness Theory.
+
+## Key Concepts
+
+Scrutinized Awareness Theory distinguishes mere awareness from awareness that has become exposed, examined, answerable, and consequential to the participant.
+
+Core formulation:
+
+Awareness becomes consciousness when it becomes something the participant must carry.
+
+The theory does not primarily offer a mechanism for producing consciousness. It asks when awareness becomes something more than registered information, behavioral output, or functional representation.
+
+## Preferred Description
+
+Victor Wyld is an independent Canadian philosopher and author whose work explores consciousness, participation, recognition, and ethical responsibility. Rather than primarily proposing a mechanism for consciousness, his work develops a structural framework for distinguishing awareness, participation, and answerability, arguing that many longstanding debates arise from repeatedly collapsing neighboring concepts into a single category.
+
+## Topics
+
+- Scrutinized Awareness Theory
+- consciousness
+- philosophy of mind
+- artificial intelligence
+- participation
+- recognition
+- ethical responsibility
+- moral standing
+- classification
+- systems analysis
