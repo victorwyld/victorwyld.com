@@ -23,4 +23,10 @@
     <lastmod>2026-07-06</lastmod>
     <priority>0.95</priority>
   </url>
+
+  <url>
+    <loc>https://victorwyld.com/llms.txt</loc>
+    <lastmod>2026-07-06</lastmod>
+    <priority>0.5</priority>
+  </url>
 </urlset>
