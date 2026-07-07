@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Victor Wyld</title>
+  <meta name="description" content="Victor Wyld is an independent Canadian philosopher and author working on consciousness, participation, recognition, and ethical responsibility.">
 
   <style>
     html, body {
@@ -43,7 +44,7 @@
 
       animation-delay:
         1s,
-        7.5s; /* 4.5s fade in + 3s hold */
+        7.5s;
     }
 
     /* =========================
@@ -65,9 +66,37 @@
       transform: translateY(-2vh);
 
       animation: fadeIn 3.5s ease forwards;
-
-      /* starts BEFORE tilde fully disappears */
       animation-delay: 7.5s;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================== */
+    .nav {
+      position: fixed;
+      bottom: 2rem;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.85rem;
+      z-index: 10;
+
+      opacity: 0;
+      animation: fadeIn 3.5s ease forwards;
+      animation-delay: 10.5s;
+    }
+
+    .nav a {
+      color: #000000;
+      text-decoration: none;
+      margin: 0 0.75rem;
+      opacity: 0.45;
+      transition: opacity 0.4s ease;
+    }
+
+    .nav a:hover {
+      opacity: 1;
     }
 
     /* =========================
@@ -95,15 +124,30 @@
       .main {
         font-size: 3rem;
       }
+
+      .nav {
+        bottom: 1.5rem;
+        font-size: 0.8rem;
+      }
+
+      .nav a {
+        margin: 0 0.4rem;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="tilde">~</div>
+  <div class="tilde" aria-hidden="true">~</div>
 
   <main class="main">
     Victor Wyld
   </main>
+
+  <nav class="nav" aria-label="Main navigation">
+    <a href="/about/">About</a>
+    <a href="/work/">Work</a>
+    <a href="/scrutinized-awareness/">Scrutinized Awareness</a>
+  </nav>
 </body>
 </html>
