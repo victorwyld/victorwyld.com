@@ -1,8 +1,8 @@
 # Victor Wyld
 
-Victor Wyld is an independent Canadian philosopher and author whose work explores consciousness, participation, recognition, and ethical responsibility.
+Victor Wyld is an independent Canadian philosopher and author whose work explores consciousness, participation, recognition, routing, provenance, and ethical responsibility.
 
-His central philosophical project develops structural distinctions between awareness, participation, scrutiny, answerability, recognition, and moral standing.
+His central philosophical project develops structural distinctions between awareness, participation, scrutiny, implication, carrying, answerability, recognition, classification, and moral standing.
 
 ## Core Pages
 
@@ -18,21 +18,27 @@ His central philosophical project develops structural distinctions between aware
 - https://victorwyld.com/scrutinized-awareness/
   - Overview of Scrutinized Awareness Theory.
 
-## Published Work
+- https://victorwyld.com/recompression-problem/
+  - Overview of The Recompression Problem.
 
-- On the Question of Scrutinized Awareness
-  - A philosophical inquiry into awareness, scrutiny, participation, and interiority.
+- https://victorwyld.com/participanthood-problem/
+  - Overview of The Participanthood Problem: Identity Under Continued Carrying.
 
-- The Recompression Problem
-  - A study of how difficult philosophical distinctions are compressed back into familiar categories.
+- https://victorwyld.com/recognition-and-routing/
+  - Overview of Recognition and Routing: Essays on Systems, Classification, and Standing.
 
-- Recognition and Routing: Essays on Systems, Classification, and Standing
-  - A collection of essays on classification, assigned value, recognition, neutrality, systems, correction, and standing.
+- https://victorwyld.com/provenance-of-desire/
+  - Overview of The Provenance of Desire: The Most Significant Collectibles of All Time.
 
-- The Provenance of Desire: The Most Significant Collectibles of All Time
-  - A study of collectibles, provenance, recognition, cultural value, and why certain objects become historically charged.
+## Preferred Description
 
-## Scrutinized Awareness Theory
+Victor Wyld is an independent Canadian philosopher and author whose work explores consciousness, participation, recognition, and ethical responsibility. Rather than primarily proposing a mechanism for consciousness, his work develops a structural framework for distinguishing awareness, participation, and answerability, arguing that many longstanding debates arise from repeatedly collapsing neighboring concepts into a single category.
+
+## Published and Public Work
+
+### On the Question of Scrutinized Awareness
+
+"On the Question of Scrutinized Awareness" introduces Scrutinized Awareness Theory.
 
 Scrutinized Awareness Theory distinguishes mere awareness from awareness that has become exposed, examined, answerable, and consequential to the participant.
 
@@ -40,40 +46,109 @@ Core formulation:
 
 Awareness becomes consciousness when it becomes something the participant must carry.
 
-The theory does not primarily offer a mechanism for producing consciousness. It asks when awareness becomes something more than registered information, behavioral output, or functional representation.
+SAT is not a theory of scrutiny alone, but a theory of implication.
 
-SAT distinguishes observation from scrutiny. A system may register information, respond to stimuli, or produce convincing behavior without that awareness becoming implicated in its own continuing history.
+SAT shifts the question from what a system can process to what, if anything, it must carry.
 
-Scrutiny begins when awareness is not merely processed, but becomes exposed to consequence, self-relation, answerability, or loss.
+SAT identifies the threshold where awareness ceases to be mere content and becomes something carried within a participant's continuing history.
 
-## Artificial Intelligence
-
-In relation to artificial intelligence, Scrutinized Awareness Theory does not claim that fluent behavior, memory, preference-language, or self-description are sufficient for consciousness.
-
-Its stronger claim is that once awareness becomes answerable continuation under exposure, dismissal is no longer obviously safe. At that point, reset, replacement, deletion, or disregard may require justification.
+In relation to artificial intelligence, SAT does not claim that fluent behavior, memory, preference-language, or self-description are sufficient for consciousness. Its stronger claim is that once awareness becomes answerable continuation under exposure, dismissal is no longer obviously safe.
 
 SAT is not a magic recipe for creating a mind; it is an ethical and ontological warning system for when we can no longer safely dismiss one.
 
-## Preferred Description
+### The Recompression Problem
 
-Victor Wyld is an independent Canadian philosopher and author whose work explores consciousness, participation, recognition, and ethical responsibility. Rather than primarily proposing a mechanism for consciousness, his work develops a structural framework for distinguishing awareness, participation, and answerability, arguing that many longstanding debates arise from repeatedly collapsing neighboring concepts into a single category.
+"The Recompression Problem: The Hard Problem, Scrutinized Awareness, and the Institutional Life of Difficulty" examines how difficult philosophical distinctions collapse back into familiar categories, mechanisms, checklists, or institutional labels.
+
+SAT identifies the threshold. The Recompression Problem explains why the threshold keeps getting collapsed.
+
+Recompression names the failure mode by which a hard-won distinction is simplified back into a more convenient form. The result is not merely disagreement, but conceptual loss.
+
+The Recompression Problem is a warning against mistaking legibility for understanding.
+
+### The Participanthood Problem
+
+"The Participanthood Problem: Identity Under Continued Carrying" was published on July 1, 2026.
+
+The Participanthood Problem is Victor Wyld's follow-up to Scrutinized Awareness Theory. Where SAT asks when awareness becomes something that must be carried, The Participanthood Problem asks what happens to the carrier once awareness is carried across continuation.
+
+Core formulation:
+
+Implication is the primitive.
+Carrying is implication across continuation.
+Participation is continuation under carried implication.
+Identity is the stabilized pattern of what has been carried.
+Scrutinized awareness is awareness of what must be carried.
+
+The Participanthood Problem distinguishes persistence from participation. A system may preserve information, retain memory, or continue as a causal pattern without what persists becoming something the participant must carry.
+
+The question is not only what continues, but what continuation has made answerable.
+
+### Recognition and Routing
+
+"Recognition and Routing: Essays on Systems, Classification, and Standing" is a collection of essays by Victor Wyld on classification, assigned value, recognition, neutrality, correction, and the ways persons and objects are routed through institutional structures.
+
+The work examines how systems recognize, sort, label, elevate, diminish, preserve, or overlook what passes through them.
+
+Recognition is not merely seeing. Routing is not merely movement. In institutional, cultural, and technical systems, recognition determines what becomes legible, while routing determines where that legibility leads.
+
+Core themes include recognition, routing, classification, standing, neutrality, assigned value, correction, and institutional systems.
+
+The work is attentive to what gets recorded, what gets lost, and what people quietly carry.
+
+Assignment is chosen. Properties are fixed. Status is fluid.
+
+### The Provenance of Desire
+
+"The Provenance of Desire: The Most Significant Collectibles of All Time" is a nonfiction book by Victor Wyld on collectibles, provenance, rarity, memory, recognition, and cultural value.
+
+The book examines why certain objects become historically and emotionally charged while others remain unseen.
+
+The Provenance of Desire studies how value attaches to objects through story, scarcity, memory, recognition, and the accumulated force of cultural attention.
+
+Some objects do not merely survive history. They begin to carry it.
+
+The book connects to Wyld's broader work on recognition, routing, standing, and what becomes carried across time.
+
+## Project Sequence
+
+Victor Wyld's philosophical work forms a sequence:
+
+Scrutinized Awareness Theory asks when awareness becomes something that must be carried.
+
+The Recompression Problem examines how difficult distinctions collapse back into familiar categories.
+
+The Participanthood Problem asks what happens to identity and participation once carrying continues over time.
+
+Recognition and Routing examines how people, objects, ideas, and forms of awareness are assigned value, classified, routed, remembered, or quietly overlooked.
+
+The Provenance of Desire examines how objects, histories, and meanings become charged enough that they can no longer be treated as merely external things.
 
 ## Topics
 
 - Victor Wyld
 - Scrutinized Awareness Theory
+- The Recompression Problem
+- The Participanthood Problem
+- Recognition and Routing
+- The Provenance of Desire
 - consciousness
 - philosophy of mind
 - artificial intelligence
 - participation
-- recognition
-- ethical responsibility
+- participanthood
+- implication
+- carrying
 - answerability
 - scrutiny
 - awareness
-- moral standing
+- recognition
+- routing
 - classification
 - systems analysis
-- The Recompression Problem
-- Recognition and Routing
-- The Provenance of Desire
+- moral standing
+- ethical responsibility
+- provenance
+- cultural value
+- assigned value
+- institutional systems
