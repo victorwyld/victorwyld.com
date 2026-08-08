@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Victor Wyld</title>
-  <meta name="description" content="Victor Wyld is an independent Canadian philosopher and author working on consciousness, participation, recognition, routing, provenance, and ethical responsibility.">
+  <meta name="description" content="Victor Wyld is a contemporary philosopher and author working on consciousness, participation, recognition, implication, routing, provenance, and ethical responsibility.">
 
   <link rel="canonical" href="https://victorwyld.com/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
   <meta property="og:title" content="Victor Wyld">
-  <meta property="og:description" content="Victor Wyld is an independent Canadian philosopher and author working on consciousness, participation, recognition, routing, provenance, and ethical responsibility.">
+  <meta property="og:description" content="Victor Wyld is a contemporary philosopher and author working on consciousness, participation, recognition, implication, routing, provenance, and ethical responsibility.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://victorwyld.com/">
   <meta property="og:site_name" content="Victor Wyld">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Victor Wyld">
-  <meta name="twitter:description" content="Victor Wyld is an independent Canadian philosopher and author working on consciousness, participation, recognition, routing, provenance, and ethical responsibility.">
+  <meta name="twitter:description" content="Victor Wyld is a contemporary philosopher and author working on consciousness, participation, recognition, implication, routing, provenance, and ethical responsibility.">
 
   <style>
     html, body {
@@ -43,6 +43,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
       font-family: Georgia, "Times New Roman", serif;
       font-size: 48rem;
       font-weight: normal;
@@ -62,24 +63,73 @@
     }
 
     /* =========================
-       MAIN TEXT
+       CENTRE TEXT
     ========================== */
-    .main {
+    .centre-text {
       position: fixed;
       inset: 0;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
+      padding: 0 2rem;
+      box-sizing: border-box;
+
       font-family: Georgia, "Times New Roman", serif;
       font-size: 3rem;
-      line-height: 1;
+      font-weight: normal;
+      line-height: 1.15;
+      text-align: center;
       color: #000000;
 
       opacity: 0;
       transform: translateY(-2vh);
+    }
 
-      animation: fadeIn 3.5s ease forwards;
-      animation-delay: 7.5s;
+    /* Victor Wyld
+       Fade in: 7.5s–11s
+       Hold:    11s–12.5s
+       Fade out:12.5s–16s
+    */
+    .victor {
+      animation:
+        fadeIn 3.5s ease forwards,
+        fadeOut 3.5s ease forwards;
+
+      animation-delay:
+        7.5s,
+        12.5s;
+    }
+
+    /* The Acquisition Problem
+       Fade in: 16s–19.5s
+       Hold:    19.5s–21s
+       Fade out:21s–24.5s
+    */
+    .tap-title {
+      animation:
+        fadeIn 3.5s ease forwards,
+        fadeOut 3.5s ease forwards;
+
+      animation-delay:
+        16s,
+        21s;
+    }
+
+    /* August 15, 2026
+       Fade in: 24.5s–28s
+       Hold:    28s–29.5s
+       Fade out:29.5s–33s
+    */
+    .tap-date {
+      animation:
+        fadeIn 3.5s ease forwards,
+        fadeOut 3.5s ease forwards;
+
+      animation-delay:
+        24.5s,
+        29.5s;
     }
 
     /* =========================
@@ -90,12 +140,15 @@
       bottom: 2rem;
       left: 0;
       width: 100%;
+
       text-align: center;
       font-family: Georgia, "Times New Roman", serif;
       font-size: 0.82rem;
+
       z-index: 10;
 
       opacity: 0;
+
       animation: fadeIn 3.5s ease forwards;
       animation-delay: 10.5s;
     }
@@ -117,13 +170,23 @@
        ANIMATIONS
     ========================== */
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
 
     @keyframes fadeOut {
-      from { opacity: 1; }
-      to { opacity: 0; }
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
     }
 
     /* =========================
@@ -135,8 +198,18 @@
         transform: translateY(-6vh);
       }
 
-      .main {
+      .centre-text {
         font-size: 3rem;
+        padding: 0 1.25rem;
+      }
+
+      .tap-title {
+        font-size: 2.15rem;
+        line-height: 1.2;
+      }
+
+      .tap-date {
+        font-size: 2.5rem;
       }
 
       .nav {
@@ -155,11 +228,22 @@
 </head>
 
 <body>
-  <div class="tilde" aria-hidden="true">~</div>
 
-  <main class="main">
+  <div class="tilde" aria-hidden="true">
+    ~
+  </div>
+
+  <div class="centre-text victor">
     Victor Wyld
-  </main>
+  </div>
+
+  <div class="centre-text tap-title">
+    The Acquisition Problem
+  </div>
+
+  <div class="centre-text tap-date">
+    August 15, 2026
+  </div>
 
   <nav class="nav" aria-label="Main navigation">
     <a href="/about/">About</a>
@@ -167,6 +251,8 @@
     <a href="/scrutinized-awareness/">Scrutinized Awareness</a>
     <a href="/recompression-problem/">Recompression</a>
     <a href="/participanthood-problem/">Participanthood</a>
+    <a href="/acquisition-problem/">Acquisition</a>
   </nav>
+
 </body>
 </html>
