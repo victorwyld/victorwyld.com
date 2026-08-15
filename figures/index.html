@@ -15,16 +15,19 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
   <meta property="og:title" content="Figures | Victor Wyld">
+
   <meta
     property="og:description"
     content="A visual reference to Scrutinized Awareness Theory and the related philosophical works of Victor Wyld."
   >
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://victorwyld.com/figures/">
   <meta property="og:site_name" content="Victor Wyld">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Figures | Victor Wyld">
+
   <meta
     name="twitter:description"
     content="A visual reference to Scrutinized Awareness Theory and the related philosophical works of Victor Wyld."
@@ -62,6 +65,71 @@
         "@type": "WebPage",
         "name": "The Architecture of Scrutinized Awareness Theory",
         "url": "https://victorwyld.com/figures/architecture-of-scrutinized-awareness-theory/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Observation vs. Scrutiny",
+        "url": "https://victorwyld.com/figures/observation-vs-scrutiny/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "The Structural Dependency Pyramid",
+        "url": "https://victorwyld.com/figures/the-structural-dependency-pyramid/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Performance vs. Participation",
+        "url": "https://victorwyld.com/figures/performance-vs-participation/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "The Concept Collapse Map",
+        "url": "https://victorwyld.com/figures/the-concept-collapse-map/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Institutional Compression of Distinctions",
+        "url": "https://victorwyld.com/figures/institutional-compression-of-distinctions/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "The Kernel of Participanthood",
+        "url": "https://victorwyld.com/figures/the-kernel-of-participanthood/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "The Path from Event to Identity",
+        "url": "https://victorwyld.com/figures/the-path-from-event-to-identity/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "The Five Modes of Identity Transformation",
+        "url": "https://victorwyld.com/figures/the-five-modes-of-identity-transformation/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "The Structural Acquisition of Implication",
+        "url": "https://victorwyld.com/figures/the-structural-acquisition-of-implication/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Representational Recognition vs. Participational Recognition",
+        "url": "https://victorwyld.com/figures/representational-recognition-vs-participational-recognition/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Constitution-Equivalent vs. Constitution-Non-Equivalent Continuation",
+        "url": "https://victorwyld.com/figures/constitution-equivalent-vs-constitution-non-equivalent-continuation/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "Participational Order: The Order That Makes Carrying Possible",
+        "url": "https://victorwyld.com/figures/participational-order/"
+      },
+      {
+        "@type": "WebPage",
+        "name": "The Artificial Case: Operational History ≠ Carried Implication",
+        "url": "https://victorwyld.com/figures/the-artificial-case-operational-history-vs-carried-implication/"
       }
     ],
     "isPartOf": {
@@ -84,10 +152,6 @@
       font-family: Georgia, "Times New Roman", serif;
       color: #000000;
       line-height: 1.55;
-    }
-
-    body.viewer-open {
-      overflow: hidden;
     }
 
     main {
@@ -142,11 +206,17 @@
       border-bottom: 1px solid rgba(0,0,0,0.16);
     }
 
-    .overview button {
-      all: unset;
-      cursor: pointer;
+    .overview a {
       display: block;
-      width: 100%;
+      color: #000000;
+      text-decoration: none;
+    }
+
+    .overview a:hover .overview-title,
+    .overview a:focus .overview-title {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
     }
 
     .overview-title {
@@ -167,25 +237,17 @@
       border-bottom: 1px solid rgba(0,0,0,0.14);
     }
 
-    .figure-button,
     .figure-link {
-      all: unset;
       box-sizing: border-box;
       width: 100%;
-      cursor: pointer;
       display: grid;
       grid-template-columns: 5rem 1fr;
       gap: 1.2rem;
       padding: 1.25rem 0.35rem;
-    }
-
-    .figure-link {
       color: #000000;
       text-decoration: none;
     }
 
-    .figure-button:hover .figure-title,
-    .figure-button:focus .figure-title,
     .figure-link:hover .figure-title,
     .figure-link:focus .figure-title {
       text-decoration: underline;
@@ -229,140 +291,6 @@
       opacity: 1;
     }
 
-    .viewer {
-      position: fixed;
-      inset: 0;
-      z-index: 1000;
-      display: none;
-      background: #ffffff;
-      overflow-y: auto;
-    }
-
-    .viewer.open {
-      display: block;
-    }
-
-    .viewer-bar {
-      position: sticky;
-      top: 0;
-      z-index: 5;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 0.85rem 1.25rem;
-      background: rgba(255,255,255,0.96);
-      border-bottom: 1px solid rgba(0,0,0,0.14);
-      backdrop-filter: blur(8px);
-    }
-
-    .viewer-bar-title {
-      font-size: 0.9rem;
-      opacity: 0.62;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-
-    .viewer-close {
-      appearance: none;
-      border: 0;
-      background: transparent;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1rem;
-      cursor: pointer;
-      padding: 0.4rem 0.2rem;
-    }
-
-    .viewer-close:hover {
-      text-decoration: underline;
-    }
-
-    .viewer-image-area {
-      width: 100%;
-      min-height: 72vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-sizing: border-box;
-      padding: 1.5rem;
-      background: #f7f7f5;
-    }
-
-    .viewer-image {
-      display: block;
-      max-width: 100%;
-      max-height: calc(100vh - 7rem);
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      background: #ffffff;
-      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
-    }
-
-    .viewer-info {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 3rem 2rem 5rem;
-    }
-
-    .viewer-kicker {
-      font-size: 0.9rem;
-      opacity: 0.5;
-      margin-bottom: 0.35rem;
-    }
-
-    .viewer-title {
-      font-size: 2rem;
-      font-weight: normal;
-      line-height: 1.2;
-      margin: 0 0 1.6rem;
-    }
-
-    .viewer-description {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-
-    .viewer-source {
-      font-size: 0.95rem;
-      opacity: 0.68;
-      margin-bottom: 2.5rem;
-    }
-
-    .viewer-source a {
-      color: inherit;
-    }
-
-    .viewer-navigation {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(0,0,0,0.15);
-    }
-
-    .viewer-navigation button {
-      appearance: none;
-      border: 0;
-      background: transparent;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 0.95rem;
-      cursor: pointer;
-      opacity: 0.62;
-      padding: 0;
-    }
-
-    .viewer-navigation button:hover:not(:disabled) {
-      opacity: 1;
-      text-decoration: underline;
-    }
-
-    .viewer-navigation button:disabled {
-      opacity: 0.2;
-      cursor: default;
-    }
-
     @media (max-width: 600px) {
       main {
         margin: 8vh auto;
@@ -378,7 +306,6 @@
         font-size: 1.03rem;
       }
 
-      .figure-button,
       .figure-link {
         grid-template-columns: 3.7rem 1fr;
         gap: 0.7rem;
@@ -396,23 +323,6 @@
         display: inline-block;
         margin: 0 0.9rem 0.75rem 0;
       }
-
-      .viewer-image-area {
-        min-height: 60vh;
-        padding: 0.6rem;
-      }
-
-      .viewer-image {
-        max-height: calc(100vh - 5rem);
-      }
-
-      .viewer-info {
-        padding: 2rem 1.35rem 4rem;
-      }
-
-      .viewer-title {
-        font-size: 1.55rem;
-      }
     }
   </style>
 </head>
@@ -420,6 +330,7 @@
 <body>
 
   <main>
+
     <h1>Figures</h1>
 
     <p class="subtitle">
@@ -427,22 +338,31 @@
     </p>
 
     <div class="intro">
+
       <p>
         These figures illustrate the conceptual architecture developed across Scrutinized Awareness Theory, The Recompression Problem, The Participanthood Problem, and The Acquisition Problem.
       </p>
 
       <p>
-        Select a figure to open the full image and a brief explanation of what it represents.
+        Select a figure to open its dedicated page, full image, and explanation.
       </p>
+
     </div>
 
     <section class="overview">
-      <button type="button" data-figure="overview">
-        <div class="overview-title"><em>Conceptual Landscape of Scrutinized Awareness Theory</em></div>
+
+      <a href="/figures/images/Conceptual_Landscape_of_SAT_Whole_300dpi_no_date_FINAL.png">
+
+        <div class="overview-title">
+          <em>Conceptual Landscape of Scrutinized Awareness Theory</em>
+        </div>
+
         <div class="overview-desc">
           An overview of the conceptual terrain surrounding the theory and its principal distinctions.
         </div>
-      </button>
+
+      </a>
+
     </section>
 
     <h2>Scrutinized Awareness Theory</h2>
@@ -454,15 +374,10 @@
     <div class="figure-list">
 
       <div class="figure-item">
-        <a
-          class="figure-link"
-          href="/figures/architecture-of-scrutinized-awareness-theory/"
-        >
+        <a class="figure-link" href="/figures/architecture-of-scrutinized-awareness-theory/">
           <div class="figure-number">Figure 1</div>
           <div>
-            <div class="figure-title">
-              The Architecture of Scrutinized Awareness Theory
-            </div>
+            <div class="figure-title">The Architecture of Scrutinized Awareness Theory</div>
             <div class="figure-summary">
               The overall structural architecture from awareness and recognition through implication, carrying, participation, identity, and scrutinized awareness.
             </div>
@@ -471,7 +386,7 @@
       </div>
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="2">
+        <a class="figure-link" href="/figures/observation-vs-scrutiny/">
           <div class="figure-number">Figure 2</div>
           <div>
             <div class="figure-title">Observation vs. Scrutiny</div>
@@ -479,11 +394,11 @@
               The foundational distinction between registering what is present and evaluating what it means, implies, and requires the participant to carry.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="3">
+        <a class="figure-link" href="/figures/the-structural-dependency-pyramid/">
           <div class="figure-number">Figure 3</div>
           <div>
             <div class="figure-title">The Structural Dependency Pyramid</div>
@@ -491,11 +406,11 @@
               SAT represented as a hierarchy of structural dependency rather than a chronological sequence.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="4">
+        <a class="figure-link" href="/figures/performance-vs-participation/">
           <div class="figure-number">Figure 4</div>
           <div>
             <div class="figure-title">Performance vs. Participation</div>
@@ -503,7 +418,7 @@
               The difference between displaying or representing scrutiny and actually undergoing it within participation.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
     </div>
@@ -517,7 +432,7 @@
     <div class="figure-list">
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="5">
+        <a class="figure-link" href="/figures/the-concept-collapse-map/">
           <div class="figure-number">Figure 5</div>
           <div>
             <div class="figure-title">The Concept Collapse Map</div>
@@ -525,11 +440,11 @@
               How scrutinized awareness can be collapsed into neighbouring concepts that capture part of the phenomenon without preserving its structural distinction.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="6">
+        <a class="figure-link" href="/figures/institutional-compression-of-distinctions/">
           <div class="figure-number">Figure 6</div>
           <div>
             <div class="figure-title">Institutional Compression of Distinctions</div>
@@ -537,7 +452,7 @@
               How systems and institutions can convert structural distinctions into administratively convenient equivalents.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
     </div>
@@ -551,7 +466,7 @@
     <div class="figure-list">
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="7">
+        <a class="figure-link" href="/figures/the-kernel-of-participanthood/">
           <div class="figure-number">Figure 7</div>
           <div>
             <div class="figure-title">The Kernel of Participanthood</div>
@@ -559,11 +474,11 @@
               The minimal architecture of implication, carrying, participation, identity, and scrutinized awareness.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="8">
+        <a class="figure-link" href="/figures/the-path-from-event-to-identity/">
           <div class="figure-number">Figure 8</div>
           <div>
             <div class="figure-title">The Path from Event to Identity</div>
@@ -571,11 +486,11 @@
               How an event becomes implicated, persists through carrying and remainder, and can transform the participant’s identity.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="9">
+        <a class="figure-link" href="/figures/the-five-modes-of-identity-transformation/">
           <div class="figure-number">Figure 9</div>
           <div>
             <div class="figure-title">The Five Modes of Identity Transformation</div>
@@ -583,7 +498,7 @@
               Accumulation, reorientation, revision, fracture, and integration as modes of identity transformation under continued carrying.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
     </div>
@@ -597,7 +512,7 @@
     <div class="figure-list">
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="10">
+        <a class="figure-link" href="/figures/the-structural-acquisition-of-implication/">
           <div class="figure-number">Figure 10</div>
           <div>
             <div class="figure-title">The Structural Acquisition of Implication</div>
@@ -605,11 +520,11 @@
               The pathway by which recognition becomes contested incorporation, leaves remainder, and enters carrying.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="11">
+        <a class="figure-link" href="/figures/representational-recognition-vs-participational-recognition/">
           <div class="figure-number">Figure 11</div>
           <div>
             <div class="figure-title">Representational Recognition vs. Participational Recognition</div>
@@ -617,11 +532,11 @@
               Recognition that remains external to the participant compared with recognition that implicates the participant and cannot be absorbed without remainder.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="12">
+        <a class="figure-link" href="/figures/constitution-equivalent-vs-constitution-non-equivalent-continuation/">
           <div class="figure-number">Figure 12</div>
           <div>
             <div class="figure-title">Constitution-Equivalent vs. Constitution-Non-Equivalent Continuation</div>
@@ -629,11 +544,11 @@
               The structural boundary between automatic incorporation and contested incorporation.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="13">
+        <a class="figure-link" href="/figures/participational-order/">
           <div class="figure-number">Figure 13</div>
           <div>
             <div class="figure-title">Participational Order: The Order That Makes Carrying Possible</div>
@@ -641,11 +556,11 @@
               The distinction between chronological order, causal order, and the order in which implications become part of what must be carried.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
       <div class="figure-item">
-        <button class="figure-button" type="button" data-figure="14">
+        <a class="figure-link" href="/figures/the-artificial-case-operational-history-vs-carried-implication/">
           <div class="figure-number">Figure 14</div>
           <div>
             <div class="figure-title">The Artificial Case: Operational History ≠ Carried Implication</div>
@@ -653,7 +568,7 @@
               Why logs, memory, objective modification, and higher-order control do not by themselves establish acquired implication in an artificial system.
             </div>
           </div>
-        </button>
+        </a>
       </div>
 
     </div>
@@ -668,339 +583,8 @@
       <a href="/participanthood-problem/">Participanthood</a>
       <a href="/acquisition-problem/">Acquisition</a>
     </nav>
+
   </main>
-
-  <div class="viewer" id="viewer" aria-hidden="true">
-
-    <div class="viewer-bar">
-      <div class="viewer-bar-title" id="viewerBarTitle">Figure</div>
-      <button class="viewer-close" id="viewerClose" type="button">Close ×</button>
-    </div>
-
-    <div class="viewer-image-area">
-      <img class="viewer-image" id="viewerImage" src="" alt="">
-    </div>
-
-    <div class="viewer-info">
-
-      <div class="viewer-kicker" id="viewerKicker"></div>
-
-      <h2 class="viewer-title" id="viewerTitle"></h2>
-
-      <p class="viewer-description" id="viewerDescription"></p>
-
-      <p class="viewer-source" id="viewerSource"></p>
-
-      <div class="viewer-navigation">
-        <button type="button" id="viewerPrevious">← Previous</button>
-        <button type="button" id="viewerAll">All Figures</button>
-        <button type="button" id="viewerNext">Next →</button>
-      </div>
-
-    </div>
-
-  </div>
-
-  <script>
-    const figures = [
-      {
-        id: "overview",
-        number: "Overview",
-        title: "Conceptual Landscape of Scrutinized Awareness Theory",
-        image: "/figures/images/Conceptual_Landscape_of_SAT_Whole_300dpi_no_date_FINAL.png",
-        alt: "Conceptual landscape of Scrutinized Awareness Theory by Victor Wyld.",
-        description: "This overview places Scrutinized Awareness Theory within its broader conceptual terrain and shows the relationships among the distinctions that organize the framework.",
-        sourceText: "Scrutinized Awareness Theory",
-        sourceUrl: "/scrutinized-awareness/"
-      },
-      {
-        id: "2",
-        number: "Figure 2",
-        title: "Observation vs. Scrutiny",
-        image: "/figures/images/Figure_2_Observation_vs_Scrutiny_no_date_FINAL.png",
-        alt: "Observation versus Scrutiny, a conceptual diagram by Victor Wyld.",
-        description: "This figure establishes SAT’s foundational distinction. Observation registers that something is present. Scrutiny evaluates what that presence means, what it implies, what is at stake, and what may become something the participant must carry.",
-        sourceText: "On the Question of Scrutinized Awareness",
-        sourceUrl: "/scrutinized-awareness/"
-      },
-      {
-        id: "3",
-        number: "Figure 3",
-        title: "The Structural Dependency Pyramid",
-        image: "/figures/images/Figure_3_The_Structural_Dependency_Pyramid_no_date_FINAL.png",
-        alt: "The Structural Dependency Pyramid, a conceptual diagram by Victor Wyld.",
-        description: "This figure represents Scrutinized Awareness Theory as a hierarchy of structural dependency rather than a sequence in time. Higher-order features depend upon the architecture beneath them, while scrutinized awareness emerges from the functioning of the structure as a whole.",
-        sourceText: "On the Question of Scrutinized Awareness",
-        sourceUrl: "/scrutinized-awareness/"
-      },
-      {
-        id: "4",
-        number: "Figure 4",
-        title: "Performance vs. Participation",
-        image: "/figures/images/Figure_4_Performance_vs_Participation_no_date_FINAL.png",
-        alt: "Performance versus Participation, a conceptual diagram by Victor Wyld.",
-        description: "This figure distinguishes the outward performance of scrutiny from participation in scrutiny itself. Language, behaviour, self-description, reflection, and apology can be represented or simulated; participation requires exposure, vulnerability, answerability, consequence, and carrying.",
-        sourceText: "On the Question of Scrutinized Awareness",
-        sourceUrl: "/scrutinized-awareness/"
-      },
-      {
-        id: "5",
-        number: "Figure 5",
-        title: "The Concept Collapse Map",
-        image: "/figures/images/Figure_5_The_Concept_Collapse_Map_Whole_300dpi_no_date_FINAL.png",
-        alt: "The Concept Collapse Map, a conceptual diagram by Victor Wyld.",
-        description: "This figure shows how scrutinized awareness can be collapsed into neighbouring concepts such as intelligence, language, attention, memory, reportability, representation, self-modeling, and agency. Each neighbour captures something real, but none preserves the whole structural distinction.",
-        sourceText: "The Recompression Problem",
-        sourceUrl: "/recompression-problem/"
-      },
-      {
-        id: "6",
-        number: "Figure 6",
-        title: "Institutional Compression of Distinctions",
-        image: "/figures/images/Figure_6_Institutional_Compression_of_Distinctions_Whole_300dpi_no_date_FINAL.png",
-        alt: "Institutional Compression of Distinctions, a conceptual diagram by Victor Wyld.",
-        description: "This figure shows how institutions can flatten difficult structural distinctions into administratively convenient equivalents. Awareness can become recognition, carrying can become memory, participation can become identity, and answerability can become reportability when the distinctions cease to govern classification or decision.",
-        sourceText: "The Recompression Problem",
-        sourceUrl: "/recompression-problem/"
-      },
-      {
-        id: "7",
-        number: "Figure 7",
-        title: "The Kernel of Participanthood",
-        image: "/figures/images/Figure_7_Kernel_of_Participanthood_Whole_300dpi_no_date_FINAL.png",
-        alt: "The Kernel of Participanthood, a conceptual diagram by Victor Wyld.",
-        description: "This figure presents the minimal architecture of participanthood: implication, carrying, participation, identity, and scrutinized awareness. Each level depends upon the one below it, beginning with implication as the primitive relation.",
-        sourceText: "The Participanthood Problem: Identity Under Continued Carrying",
-        sourceUrl: "/participanthood-problem/"
-      },
-      {
-        id: "8",
-        number: "Figure 8",
-        title: "The Path from Event to Identity",
-        image: "/figures/images/Figure_8_The_Path_from_Event_to_Identity_300dpi_no_date_FINAL.png",
-        alt: "The Path from Event to Identity, a conceptual diagram by Victor Wyld.",
-        description: "This figure follows the path by which an event can become identity-transforming. An occurrence becomes implicated, persists through carrying, leaves an active remainder, and reorganizes the participant rather than remaining mere occurrence, causal influence, memory, or narrative.",
-        sourceText: "The Participanthood Problem: Identity Under Continued Carrying",
-        sourceUrl: "/participanthood-problem/"
-      },
-      {
-        id: "9",
-        number: "Figure 9",
-        title: "The Five Modes of Identity Transformation",
-        image: "/figures/images/Figure_9_Five_Modes_Identity_Transformation_400dpi_no_date_FINAL.png",
-        alt: "The Five Modes of Identity Transformation, a conceptual diagram by Victor Wyld.",
-        description: "This figure identifies five modes through which identity can be transformed under continued carrying: accumulation, reorientation, revision, fracture, and integration. They are modes rather than chronological stages, and more than one may be active within the continuing life of a participant.",
-        sourceText: "The Participanthood Problem: Identity Under Continued Carrying",
-        sourceUrl: "/participanthood-problem/"
-      },
-      {
-        id: "10",
-        number: "Figure 10",
-        title: "The Structural Acquisition of Implication",
-        image: "/figures/images/Figure_10_The_Structural_Acquisition_of_Implication_no_date_FINAL.png",
-        alt: "The Structural Acquisition of Implication, a conceptual diagram by Victor Wyld.",
-        description: "This figure maps the pathway by which awareness can become something a participant must carry. Recognition reaches a structural decision point: if it can be absorbed without remainder, continuation remains constitution-equivalent; if it cannot, contested incorporation produces remainder, carrying, identity, and ultimately scrutinized awareness.",
-        sourceText: "The Acquisition Problem: Participational Recognition and the Structural Acquisition of Implication",
-        sourceUrl: "/acquisition-problem/"
-      },
-      {
-        id: "11",
-        number: "Figure 11",
-        title: "Representational Recognition vs. Participational Recognition",
-        image: "/figures/images/Figure_11_Representational_vs_Participational_Recognition_Whole_300dpi_no_date_FINAL.png",
-        alt: "Representational Recognition versus Participational Recognition, a conceptual diagram by Victor Wyld.",
-        description: "This figure separates recognition that remains external to the participant’s constitution from recognition that implicates the participant. Participational recognition cannot be absorbed without remainder and therefore makes carrying and identity transformation possible.",
-        sourceText: "The Acquisition Problem: Participational Recognition and the Structural Acquisition of Implication",
-        sourceUrl: "/acquisition-problem/"
-      },
-      {
-        id: "12",
-        number: "Figure 12",
-        title: "Constitution-Equivalent vs. Constitution-Non-Equivalent Continuation",
-        image: "/figures/images/Figure_12_Constitution_Equivalent_vs_Constitution_Non_Equivalent_Continuation_Whole_300dpi_no_date_FINAL.png",
-        alt: "Constitution-Equivalent versus Constitution-Non-Equivalent Continuation, a conceptual diagram by Victor Wyld.",
-        description: "This figure identifies the boundary between automatic and contested incorporation. The decisive issue is not intensity, importance, or emotional force, but whether what is recognized can be incorporated under the existing constitutive criterion without remainder.",
-        sourceText: "The Acquisition Problem: Participational Recognition and the Structural Acquisition of Implication",
-        sourceUrl: "/acquisition-problem/"
-      },
-      {
-        id: "13",
-        number: "Figure 13",
-        title: "Participational Order: The Order That Makes Carrying Possible",
-        image: "/figures/images/Figure_13_Participational_Order_Whole_300dpi_no_date_FINAL.png",
-        alt: "Participational Order: The Order That Makes Carrying Possible, a conceptual diagram by Victor Wyld.",
-        description: "This figure distinguishes chronological order, causal order, and participational order. Participational order concerns the sequence in which implications are acquired and become part of what must be carried, rather than merely when events occurred or how they caused one another.",
-        sourceText: "The Acquisition Problem: Participational Recognition and the Structural Acquisition of Implication",
-        sourceUrl: "/acquisition-problem/"
-      },
-      {
-        id: "14",
-        number: "Figure 14",
-        title: "The Artificial Case: Operational History ≠ Carried Implication",
-        image: "/figures/images/Figure_14_The_Artificial_Case_Operational_History_vs_Carried_Implication_Whole_300dpi_copyright_FINAL.png",
-        alt: "The Artificial Case: Operational History is not Carried Implication, a conceptual diagram by Victor Wyld.",
-        description: "This figure applies the acquisition problem to artificial systems. Logs, memory, objective modification, policy revision, and higher-order control do not by themselves establish acquired implication. The relevant transition occurs when continuation becomes constitution-non-equivalent and what is recognized cannot be absorbed without remainder.",
-        sourceText: "The Acquisition Problem: Participational Recognition and the Structural Acquisition of Implication",
-        sourceUrl: "/acquisition-problem/"
-      }
-    ];
-
-    const viewer = document.getElementById("viewer");
-    const viewerImage = document.getElementById("viewerImage");
-    const viewerKicker = document.getElementById("viewerKicker");
-    const viewerTitle = document.getElementById("viewerTitle");
-    const viewerDescription = document.getElementById("viewerDescription");
-    const viewerSource = document.getElementById("viewerSource");
-    const viewerBarTitle = document.getElementById("viewerBarTitle");
-    const viewerClose = document.getElementById("viewerClose");
-    const viewerPrevious = document.getElementById("viewerPrevious");
-    const viewerNext = document.getElementById("viewerNext");
-    const viewerAll = document.getElementById("viewerAll");
-
-    let currentIndex = -1;
-
-    function openFigure(id, updateHash = true) {
-      const index = figures.findIndex(
-        figure => figure.id === String(id)
-      );
-
-      if (index === -1) {
-        return;
-      }
-
-      currentIndex = index;
-
-      const figure = figures[index];
-
-      viewerImage.src = figure.image;
-      viewerImage.alt = figure.alt;
-
-      viewerKicker.textContent = figure.number;
-      viewerTitle.textContent = figure.title;
-      viewerDescription.textContent = figure.description;
-      viewerBarTitle.textContent =
-        figure.title + " — " + figure.number;
-
-      viewerSource.innerHTML =
-        'From: <a href="' +
-        figure.sourceUrl +
-        '"><em>' +
-        figure.sourceText +
-        '</em></a>';
-
-      viewerPrevious.disabled = index === 0;
-      viewerNext.disabled = index === figures.length - 1;
-
-      viewer.classList.add("open");
-      viewer.setAttribute("aria-hidden", "false");
-      document.body.classList.add("viewer-open");
-
-      viewer.scrollTop = 0;
-
-      if (updateHash) {
-        const hash =
-          figure.id === "overview"
-            ? "#overview"
-            : "#figure-" + figure.id;
-
-        history.pushState(null, "", hash);
-      }
-    }
-
-    function closeViewer(updateHash = true) {
-      viewer.classList.remove("open");
-      viewer.setAttribute("aria-hidden", "true");
-      document.body.classList.remove("viewer-open");
-
-      viewerImage.src = "";
-      currentIndex = -1;
-
-      if (updateHash) {
-        history.pushState(
-          null,
-          "",
-          window.location.pathname + window.location.search
-        );
-      }
-    }
-
-    document
-      .querySelectorAll("[data-figure]")
-      .forEach(button => {
-        button.addEventListener("click", () => {
-          openFigure(button.dataset.figure);
-        });
-      });
-
-    viewerClose.addEventListener("click", () => {
-      closeViewer();
-    });
-
-    viewerAll.addEventListener("click", () => {
-      closeViewer();
-    });
-
-    viewerPrevious.addEventListener("click", () => {
-      if (currentIndex > 0) {
-        openFigure(figures[currentIndex - 1].id);
-      }
-    });
-
-    viewerNext.addEventListener("click", () => {
-      if (currentIndex < figures.length - 1) {
-        openFigure(figures[currentIndex + 1].id);
-      }
-    });
-
-    document.addEventListener("keydown", event => {
-      if (!viewer.classList.contains("open")) {
-        return;
-      }
-
-      if (event.key === "Escape") {
-        closeViewer();
-      }
-
-      if (
-        event.key === "ArrowLeft" &&
-        currentIndex > 0
-      ) {
-        openFigure(figures[currentIndex - 1].id);
-      }
-
-      if (
-        event.key === "ArrowRight" &&
-        currentIndex < figures.length - 1
-      ) {
-        openFigure(figures[currentIndex + 1].id);
-      }
-    });
-
-    function openFromHash() {
-      const hash = window.location.hash;
-
-      if (!hash) {
-        if (viewer.classList.contains("open")) {
-          closeViewer(false);
-        }
-        return;
-      }
-
-      if (hash === "#overview") {
-        openFigure("overview", false);
-        return;
-      }
-
-      const match = hash.match(/^#figure-(\d+)$/);
-
-      if (match) {
-        openFigure(match[1], false);
-      }
-    }
-
-    window.addEventListener("popstate", openFromHash);
-    window.addEventListener("DOMContentLoaded", openFromHash);
-  </script>
 
 </body>
 </html>
