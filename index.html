@@ -16,7 +16,10 @@
   <link rel="canonical" href="https://victorwyld.com/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-  <meta property="og:title" content="Victor Wyld | Contemporary Philosopher">
+  <meta
+    property="og:title"
+    content="Victor Wyld | Contemporary Philosopher"
+  >
 
   <meta
     property="og:description"
@@ -29,7 +32,11 @@
   <meta property="og:locale" content="en_CA">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Victor Wyld | Contemporary Philosopher">
+
+  <meta
+    name="twitter:title"
+    content="Victor Wyld | Contemporary Philosopher"
+  >
 
   <meta
     name="twitter:description"
@@ -198,9 +205,14 @@
       color: #000000;
     }
 
+    /* =========================
+       TILDE
+    ========================== */
+
     .tilde {
       position: fixed;
       inset: 0;
+
       display: flex;
       align-items: center;
       justify-content: center;
@@ -218,40 +230,55 @@
         fadeOut 4.5s ease 7.5s forwards;
     }
 
+    /* =========================
+       MAIN AREA
+    ========================== */
+
     .main {
       position: fixed;
       inset: 0;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
       padding: 0 2rem;
       box-sizing: border-box;
       text-align: center;
-
-      transform: translateY(-2vh);
     }
 
     .identity {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 52rem;
+      width: 100%;
     }
 
+    /* =========================
+       VICTOR WYLD
+    ========================== */
+
     .main h1 {
+      position: fixed;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
       margin: 0;
+
       font-size: 3rem;
       font-weight: normal;
       line-height: 1;
+      white-space: nowrap;
 
       opacity: 0;
       animation: fadeIn 3.5s ease 7.5s forwards;
     }
 
+    /* =========================
+       SUPPORTING TEXT
+    ========================== */
+
     .details {
-      margin-top: 1.65rem;
+      position: fixed;
+      top: calc(48% + 4.5rem);
+      left: 50%;
+
+      width: min(46rem, calc(100% - 3rem));
+      transform: translateX(-50%);
 
       opacity: 0;
       animation: fadeIn 3.5s ease 10.5s forwards;
@@ -259,6 +286,7 @@
 
     .role {
       margin: 0;
+
       font-size: 0.9rem;
       line-height: 1.5;
       letter-spacing: 0.025em;
@@ -266,7 +294,8 @@
 
     .summary {
       max-width: 46rem;
-      margin:  1.1rem 0 0;
+      margin: 1.1rem 0 0;
+
       font-size: 0.88rem;
       line-height: 1.65;
       color: #333333;
@@ -288,6 +317,10 @@
       text-decoration-color: #000000;
     }
 
+    /* =========================
+       NAVIGATION
+    ========================== */
+
     .nav {
       position: fixed;
       bottom: 2rem;
@@ -304,10 +337,12 @@
 
     .nav a {
       margin: 0 0.55rem;
+
       color: #000000;
       text-decoration: none;
       white-space: nowrap;
       opacity: 0.45;
+
       transition: opacity 0.4s ease;
     }
 
@@ -315,6 +350,10 @@
     .nav a:focus-visible {
       opacity: 1;
     }
+
+    /* =========================
+       ANIMATIONS
+    ========================== */
 
     @keyframes fadeIn {
       from {
@@ -336,6 +375,10 @@
       }
     }
 
+    /* =========================
+       MOBILE
+    ========================== */
+
     @media (max-width: 600px) {
       .tilde {
         font-size: 24rem;
@@ -347,7 +390,13 @@
       }
 
       .main h1 {
+        top: 42%;
         font-size: 3rem;
+      }
+
+      .details {
+        top: calc(42% + 4.25rem);
+        width: calc(100% - 2.5rem);
       }
 
       .role {
@@ -373,6 +422,10 @@
         margin: 0 0.35rem;
       }
     }
+
+    /* =========================
+       REDUCED MOTION
+    ========================== */
 
     @media (prefers-reduced-motion: reduce) {
       .tilde {
@@ -411,7 +464,8 @@
           awareness that becomes something the participant must carry, and is
           developed through
           <a href="/recompression-problem/">The Recompression Problem</a>,
-          <a href="/participanthood-problem/">The Participanthood Problem</a>, and
+          <a href="/participanthood-problem/">The Participanthood Problem</a>,
+          and
           <a href="/acquisition-problem/">The Acquisition Problem</a>.
         </p>
       </div>
