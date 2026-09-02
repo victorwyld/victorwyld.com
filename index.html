@@ -16,10 +16,7 @@
   <link rel="canonical" href="https://victorwyld.com/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-  <meta
-    property="og:title"
-    content="Victor Wyld | Contemporary Philosopher"
-  >
+  <meta property="og:title" content="Victor Wyld | Contemporary Philosopher">
 
   <meta
     property="og:description"
@@ -32,11 +29,7 @@
   <meta property="og:locale" content="en_CA">
 
   <meta name="twitter:card" content="summary">
-
-  <meta
-    name="twitter:title"
-    content="Victor Wyld | Contemporary Philosopher"
-  >
+  <meta name="twitter:title" content="Victor Wyld | Contemporary Philosopher">
 
   <meta
     name="twitter:description"
@@ -237,10 +230,7 @@
       box-sizing: border-box;
       text-align: center;
 
-      opacity: 0;
       transform: translateY(-2vh);
-
-      animation: fadeIn 3.5s ease 7.5s forwards;
     }
 
     .identity {
@@ -255,19 +245,29 @@
       font-size: 3rem;
       font-weight: normal;
       line-height: 1;
+
+      opacity: 0;
+      animation: fadeIn 3.5s ease 7.5s forwards;
+    }
+
+    .details {
+      margin-top: 1.65rem;
+
+      opacity: 0;
+      animation: fadeIn 3.5s ease 10.5s forwards;
     }
 
     .role {
-      margin: 1rem 0 0;
-      font-size: 1rem;
+      margin: 0;
+      font-size: 0.9rem;
       line-height: 1.5;
       letter-spacing: 0.025em;
     }
 
     .summary {
-      max-width: 48rem;
-      margin: 1.25rem 0 0;
-      font-size: 1rem;
+      max-width: 46rem;
+      margin:  1.1rem 0 0;
+      font-size: 0.88rem;
       line-height: 1.65;
       color: #333333;
     }
@@ -351,13 +351,13 @@
       }
 
       .role {
-        font-size: 0.95rem;
+        font-size: 0.84rem;
       }
 
       .summary {
         max-width: 32rem;
-        margin-top: 1rem;
-        font-size: 0.9rem;
+        margin-top: 0.9rem;
+        font-size: 0.82rem;
         line-height: 1.55;
       }
 
@@ -379,7 +379,8 @@
         display: none;
       }
 
-      .main,
+      .main h1,
+      .details,
       .nav {
         opacity: 1;
         animation: none;
@@ -397,21 +398,23 @@
     <div class="identity">
       <h1>Victor Wyld</h1>
 
-      <p class="role">
-        Contemporary Canadian philosopher of mind and consciousness
-      </p>
+      <div class="details">
+        <p class="role">
+          Contemporary Canadian philosopher of mind and consciousness
+        </p>
 
-      <p class="summary">
-        In 2026, Wyld introduced
-        <a href="/scrutinized-awareness/">Scrutinized Awareness Theory</a>,
-        a novel contribution to contemporary philosophy of mind and the
-        philosophy of consciousness. The theory defines consciousness as
-        awareness that becomes something the participant must carry, and is
-        developed through
-        <a href="/recompression-problem/">The Recompression Problem</a>,
-        <a href="/participanthood-problem/">The Participanthood Problem</a>, and
-        <a href="/acquisition-problem/">The Acquisition Problem</a>.
-      </p>
+        <p class="summary">
+          In 2026, Wyld introduced
+          <a href="/scrutinized-awareness/">Scrutinized Awareness Theory</a>,
+          a novel contribution to contemporary philosophy of mind and the
+          philosophy of consciousness. The theory defines consciousness as
+          awareness that becomes something the participant must carry, and is
+          developed through
+          <a href="/recompression-problem/">The Recompression Problem</a>,
+          <a href="/participanthood-problem/">The Participanthood Problem</a>, and
+          <a href="/acquisition-problem/">The Acquisition Problem</a>.
+        </p>
+      </div>
     </div>
   </main>
 
