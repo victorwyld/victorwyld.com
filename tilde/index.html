@@ -37,20 +37,12 @@
       color: #111111;
     }
 
-    /* =========================
-       STAGE
-    ========================== */
-
     .stage {
       position: fixed;
       inset: 0;
       overflow: hidden;
       background: #ffffff;
     }
-
-    /* =========================
-       TILDE TITLE
-    ========================== */
 
     .title {
       position: absolute;
@@ -74,10 +66,6 @@
         titleFirstOut 3.5s ease 7.5s forwards,
         titleFinalIn 3.5s ease 20.5s forwards;
     }
-
-    /* =========================
-       PHOTOGRAPH
-    ========================== */
 
     .photo-wrap {
       position: absolute;
@@ -109,10 +97,6 @@
       object-fit: contain;
     }
 
-    /* =========================
-       HOME
-    ========================== */
-
     .home {
       position: fixed;
       left: 50%;
@@ -137,10 +121,6 @@
     .home:focus-visible {
       opacity: 1 !important;
     }
-
-    /* =========================
-       ANIMATIONS
-    ========================== */
 
     @keyframes titleFirstIn {
       from {
@@ -202,10 +182,6 @@
       }
     }
 
-    /* =========================
-       MOBILE
-    ========================== */
-
     @media (max-width: 600px) {
       .title {
         font-size: 3rem;
@@ -228,10 +204,6 @@
       }
     }
 
-    /* =========================
-       REDUCED MOTION
-    ========================== */
-
     @media (prefers-reduced-motion: reduce) {
       .title {
         opacity: 1;
@@ -251,6 +223,7 @@
 </head>
 
 <body>
+
   <main class="stage">
 
     <div class="title">
@@ -259,7 +232,7 @@
 
     <div class="photo-wrap">
       <img
-        src="/tilde/tilde-display.jpg"
+        src="/tilde/bookstore.png"
         alt="TILDE displayed in a bookstore"
       >
     </div>
