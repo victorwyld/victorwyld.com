@@ -6,17 +6,14 @@
 
   <title>TILDE | Victor Wyld</title>
 
-  <meta
-    name="description"
-    content="TILDE, a novel by Victor Wyld."
-  >
-
+  <meta name="description" content="TILDE.">
   <meta name="author" content="Victor Wyld">
+
   <link rel="canonical" href="https://victorwyld.com/tilde/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
   <meta property="og:title" content="TILDE | Victor Wyld">
-  <meta property="og:description" content="TILDE, a novel by Victor Wyld.">
+  <meta property="og:description" content="TILDE.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://victorwyld.com/tilde/">
   <meta property="og:site_name" content="Victor Wyld">
@@ -40,11 +37,11 @@
     .stage {
       position: fixed;
       inset: 0;
-      overflow: hidden;
       background: #ffffff;
+      overflow: hidden;
     }
 
-    .title {
+    .screen {
       position: absolute;
       inset: 0;
 
@@ -52,6 +49,14 @@
       align-items: center;
       justify-content: center;
 
+      opacity: 0;
+    }
+
+    /* =========================
+       FIRST TILDE
+    ========================== */
+
+    .title-first {
       font-size: 4rem;
       font-weight: normal;
       letter-spacing: 0.16em;
@@ -59,70 +64,47 @@
 
       transform: translateY(-4vh);
 
-      opacity: 0;
+      animation:
+        firstTitleIn 3.5s ease 1s forwards,
+        firstTitleOut 3.5s ease 7.5s forwards;
+    }
+
+    /* =========================
+       ~
+    ========================== */
+
+    .symbol {
+      font-size: 48rem;
+      font-weight: normal;
+      line-height: 1;
+
+      transform: translateY(-9vh);
 
       animation:
-        titleFirstIn 3.5s ease 1s forwards,
-        titleFirstOut 3.5s ease 7.5s forwards,
-        titleFinalIn 3.5s ease 20.5s forwards;
+        symbolIn 3.5s ease 10.5s forwards,
+        symbolOut 3.5s ease 17s forwards;
     }
 
-    .photo-wrap {
-      position: absolute;
-      inset: 0;
+    /* =========================
+       FINAL TILDE
+    ========================== */
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .title-final {
+      font-size: 4rem;
+      font-weight: normal;
+      letter-spacing: 0.16em;
+      line-height: 1;
 
-      padding: 2rem;
-      box-sizing: border-box;
+      transform: translateY(-4vh);
 
-      opacity: 0;
-
-      animation:
-        photoIn 3.5s ease 10.5s forwards,
-        photoOut 3.5s ease 17s forwards;
+      animation: finalTitleIn 3.5s ease 20.5s forwards;
     }
 
-    .photo-wrap img {
-      display: block;
+    /* =========================
+       ANIMATIONS
+    ========================== */
 
-      max-width: min(82vw, 1100px);
-      max-height: 78vh;
-
-      width: auto;
-      height: auto;
-
-      object-fit: contain;
-    }
-
-    .home {
-      position: fixed;
-      left: 50%;
-      bottom: 2rem;
-      z-index: 10;
-
-      transform: translateX(-50%);
-
-      color: #000000;
-      text-decoration: none;
-
-      font-size: 0.82rem;
-
-      opacity: 0;
-
-      animation: homeIn 3.5s ease 23.5s forwards;
-
-      transition: opacity 0.4s ease;
-    }
-
-    .home:hover,
-    .home:focus-visible {
-      opacity: 1 !important;
-    }
-
-    @keyframes titleFirstIn {
+    @keyframes firstTitleIn {
       from {
         opacity: 0;
       }
@@ -132,7 +114,7 @@
       }
     }
 
-    @keyframes titleFirstOut {
+    @keyframes firstTitleOut {
       from {
         opacity: 1;
       }
@@ -142,7 +124,7 @@
       }
     }
 
-    @keyframes photoIn {
+    @keyframes symbolIn {
       from {
         opacity: 0;
       }
@@ -152,7 +134,7 @@
       }
     }
 
-    @keyframes photoOut {
+    @keyframes symbolOut {
       from {
         opacity: 1;
       }
@@ -162,7 +144,7 @@
       }
     }
 
-    @keyframes titleFinalIn {
+    @keyframes finalTitleIn {
       from {
         opacity: 0;
       }
@@ -172,50 +154,36 @@
       }
     }
 
-    @keyframes homeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 0.45;
-      }
-    }
+    /* =========================
+       MOBILE
+    ========================== */
 
     @media (max-width: 600px) {
-      .title {
+      .title-first,
+      .title-final {
         font-size: 3rem;
         letter-spacing: 0.13em;
         transform: translateY(-3vh);
       }
 
-      .photo-wrap {
-        padding: 1.25rem;
-      }
-
-      .photo-wrap img {
-        max-width: calc(100vw - 2.5rem);
-        max-height: 72vh;
-      }
-
-      .home {
-        bottom: 1.25rem;
-        font-size: 0.72rem;
+      .symbol {
+        font-size: 24rem;
+        transform: translateY(-6vh);
       }
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      .title {
-        opacity: 1;
-        animation: none;
-      }
+    /* =========================
+       REDUCED MOTION
+    ========================== */
 
-      .photo-wrap {
+    @media (prefers-reduced-motion: reduce) {
+      .title-first,
+      .symbol {
         display: none;
       }
 
-      .home {
-        opacity: 0.45;
+      .title-final {
+        opacity: 1;
         animation: none;
       }
     }
@@ -226,20 +194,19 @@
 
   <main class="stage">
 
-    <div class="title">
+    <div class="screen title-first">
       TILDE
     </div>
 
-    <div class="photo-wrap">
-      <img
-        src="/tilde/bookstore.png"
-        alt="TILDE displayed in a bookstore"
-      >
+    <div class="screen symbol" aria-hidden="true">
+      ~
+    </div>
+
+    <div class="screen title-final">
+      TILDE
     </div>
 
   </main>
-
-  <a class="home" href="/">Victor Wyld</a>
 
 </body>
 </html>
