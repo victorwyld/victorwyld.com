@@ -61,50 +61,87 @@
       font-weight: normal;
       letter-spacing: 0.16em;
       line-height: 1;
-
       transform: translateY(-4vh);
 
       animation:
-        firstTitleIn 3.5s ease 1s forwards,
-        firstTitleOut 3.5s ease 7.5s forwards;
+        fadeIn 3.5s ease 1s forwards,
+        fadeOut 3.5s ease 7.5s forwards;
     }
 
     /* =========================
-       ~
+       CENTER ~
     ========================== */
 
     .symbol {
       font-size: 48rem;
       font-weight: normal;
       line-height: 1;
-
       transform: translateY(-9vh);
 
       animation:
-        symbolIn 3.5s ease 10.5s forwards,
-        symbolOut 3.5s ease 17s forwards;
+        fadeIn 3.5s ease 10.5s forwards,
+        fadeOut 3.5s ease 17s forwards;
     }
 
     /* =========================
-       FINAL TILDE
+       SECOND TILDE
     ========================== */
 
-    .title-final {
+    .title-second {
       font-size: 4rem;
       font-weight: normal;
       letter-spacing: 0.16em;
       line-height: 1;
-
       transform: translateY(-4vh);
 
-      animation: finalTitleIn 3.5s ease 20.5s forwards;
+      animation:
+        fadeIn 3.5s ease 20.5s forwards,
+        fadeOut 3.5s ease 27s forwards;
+    }
+
+    /* =========================
+       FINAL COVER
+    ========================== */
+
+    .cover {
+      flex-direction: column;
+      text-align: center;
+
+      animation: fadeIn 3.5s ease 30s forwards;
+    }
+
+    .cover-symbol {
+      font-size: 48rem;
+      font-weight: normal;
+      line-height: 0.9;
+      transform: translateY(-4vh);
+      margin: 0;
+    }
+
+    .cover-byline {
+      margin: -1.5rem 0 0;
+      font-size: 1.05rem;
+      letter-spacing: 0.03em;
+      line-height: 1.5;
+    }
+
+    .cover-byline a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.72;
+      transition: opacity 0.3s ease;
+    }
+
+    .cover-byline a:hover,
+    .cover-byline a:focus-visible {
+      opacity: 1;
     }
 
     /* =========================
        ANIMATIONS
     ========================== */
 
-    @keyframes firstTitleIn {
+    @keyframes fadeIn {
       from {
         opacity: 0;
       }
@@ -114,43 +151,13 @@
       }
     }
 
-    @keyframes firstTitleOut {
+    @keyframes fadeOut {
       from {
         opacity: 1;
       }
 
       to {
         opacity: 0;
-      }
-    }
-
-    @keyframes symbolIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes symbolOut {
-      from {
-        opacity: 1;
-      }
-
-      to {
-        opacity: 0;
-      }
-    }
-
-    @keyframes finalTitleIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
       }
     }
 
@@ -160,15 +167,21 @@
 
     @media (max-width: 600px) {
       .title-first,
-      .title-final {
+      .title-second {
         font-size: 3rem;
         letter-spacing: 0.13em;
         transform: translateY(-3vh);
       }
 
-      .symbol {
+      .symbol,
+      .cover-symbol {
         font-size: 24rem;
-        transform: translateY(-6vh);
+        transform: translateY(-3vh);
+      }
+
+      .cover-byline {
+        margin-top: -0.5rem;
+        font-size: 0.92rem;
       }
     }
 
@@ -178,11 +191,12 @@
 
     @media (prefers-reduced-motion: reduce) {
       .title-first,
-      .symbol {
+      .symbol,
+      .title-second {
         display: none;
       }
 
-      .title-final {
+      .cover {
         opacity: 1;
         animation: none;
       }
@@ -191,7 +205,6 @@
 </head>
 
 <body>
-
   <main class="stage">
 
     <div class="screen title-first">
@@ -202,11 +215,17 @@
       ~
     </div>
 
-    <div class="screen title-final">
+    <div class="screen title-second">
       TILDE
     </div>
 
-  </main>
+    <div class="screen cover">
+      <p class="cover-symbol" aria-hidden="true">~</p>
+      <p class="cover-byline">
+        <a href="/">by Victor Wyld</a>
+      </p>
+    </div>
 
+  </main>
 </body>
 </html>
