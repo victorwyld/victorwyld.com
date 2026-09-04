@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>TILDE | Victor Wyld</title>
+
+  <meta
+    name="description"
+    content="TILDE, a novel by Victor Wyld."
+  >
+
+  <meta name="author" content="Victor Wyld">
+  <link rel="canonical" href="https://victorwyld.com/tilde/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:title" content="TILDE | Victor Wyld">
+  <meta property="og:description" content="TILDE, a novel by Victor Wyld.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://victorwyld.com/tilde/">
+  <meta property="og:site_name" content="Victor Wyld">
+  <meta property="og:locale" content="en_CA">
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #111111;
+    }
+
+    /* =========================
+       STAGE
+    ========================== */
+
+    .stage {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    /* =========================
+       TILDE TITLE
+    ========================== */
+
+    .title {
+      position: absolute;
+      inset: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 4rem;
+      font-weight: normal;
+      letter-spacing: 0.16em;
+      line-height: 1;
+
+      transform: translateY(-4vh);
+
+      opacity: 0;
+
+      animation:
+        titleFirstIn 3.5s ease 1s forwards,
+        titleFirstOut 3.5s ease 7.5s forwards,
+        titleFinalIn 3.5s ease 20.5s forwards;
+    }
+
+    /* =========================
+       PHOTOGRAPH
+    ========================== */
+
+    .photo-wrap {
+      position: absolute;
+      inset: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 2rem;
+      box-sizing: border-box;
+
+      opacity: 0;
+
+      animation:
+        photoIn 3.5s ease 10.5s forwards,
+        photoOut 3.5s ease 17s forwards;
+    }
+
+    .photo-wrap img {
+      display: block;
+
+      max-width: min(82vw, 1100px);
+      max-height: 78vh;
+
+      width: auto;
+      height: auto;
+
+      object-fit: contain;
+    }
+
+    /* =========================
+       HOME
+    ========================== */
+
+    .home {
+      position: fixed;
+      left: 50%;
+      bottom: 2rem;
+      z-index: 10;
+
+      transform: translateX(-50%);
+
+      color: #000000;
+      text-decoration: none;
+
+      font-size: 0.82rem;
+
+      opacity: 0;
+
+      animation: homeIn 3.5s ease 23.5s forwards;
+
+      transition: opacity 0.4s ease;
+    }
+
+    .home:hover,
+    .home:focus-visible {
+      opacity: 1 !important;
+    }
+
+    /* =========================
+       ANIMATIONS
+    ========================== */
+
+    @keyframes titleFirstIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes titleFirstOut {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes photoIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes photoOut {
+      from {
+        opacity: 1;
+      }
+
+      to {
+        opacity: 0;
+      }
+    }
+
+    @keyframes titleFinalIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes homeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 0.45;
+      }
+    }
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 3rem;
+        letter-spacing: 0.13em;
+        transform: translateY(-3vh);
+      }
+
+      .photo-wrap {
+        padding: 1.25rem;
+      }
+
+      .photo-wrap img {
+        max-width: calc(100vw - 2.5rem);
+        max-height: 72vh;
+      }
+
+      .home {
+        bottom: 1.25rem;
+        font-size: 0.72rem;
+      }
+    }
+
+    /* =========================
+       REDUCED MOTION
+    ========================== */
+
+    @media (prefers-reduced-motion: reduce) {
+      .title {
+        opacity: 1;
+        animation: none;
+      }
+
+      .photo-wrap {
+        display: none;
+      }
+
+      .home {
+        opacity: 0.45;
+        animation: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="stage">
+
+    <div class="title">
+      TILDE
+    </div>
+
+    <div class="photo-wrap">
+      <img
+        src="/tilde/tilde-display.jpg"
+        alt="TILDE displayed in a bookstore"
+      >
+    </div>
+
+  </main>
+
+  <a class="home" href="/">Victor Wyld</a>
+
+</body>
+</html>
