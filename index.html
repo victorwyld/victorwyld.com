@@ -311,23 +311,24 @@
   </script>
 
   <style>
-    html,
-    body {
+    html, body {
       margin: 0;
       width: 100%;
-      height: 100%;
+      min-height: 100%;
       background: #ffffff;
-      overflow: hidden;
+    }
+
+    html {
+      overflow-x: hidden;
     }
 
     body {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
       font-family: Georgia, "Times New Roman", serif;
       color: #000000;
     }
-
-    /* =========================
-       TILDE
-    ========================== */
 
     .tilde {
       position: fixed;
@@ -344,21 +345,19 @@
 
       opacity: 0;
       transform: translateY(-9vh);
+      pointer-events: none;
 
       animation:
         fadeIn 4.5s ease 1s forwards,
         fadeOut 4.5s ease 7.5s forwards;
     }
 
-    /* =========================
-       MAIN AREA
-    ========================== */
-
     .main {
-      position: fixed;
-      inset: 0;
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh;
 
-      padding: 0 2rem;
+      padding: calc(48vh - 1.5rem) 2rem 8rem;
       box-sizing: border-box;
       text-align: center;
     }
@@ -367,16 +366,7 @@
       width: 100%;
     }
 
-    /* =========================
-       VICTOR WYLD
-    ========================== */
-
     .main h1 {
-      position: fixed;
-      top: 48%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
       margin: 0;
 
       font-size: 3rem;
@@ -388,17 +378,9 @@
       animation: fadeIn 3.5s ease 7.5s forwards;
     }
 
-    /* =========================
-       SUPPORTING TEXT
-    ========================== */
-
     .details {
-      position: fixed;
-      top: calc(48% + 4.5rem);
-      left: 50%;
-
-      width: min(46rem, calc(100% - 3rem));
-      transform: translateX(-50%);
+      width: min(46rem, 100%);
+      margin: 3rem auto 0;
 
       opacity: 0;
       animation: fadeIn 3.5s ease 10.5s forwards;
@@ -412,6 +394,15 @@
       letter-spacing: 0.025em;
     }
 
+    .statement {
+      max-width: 40rem;
+      margin: 1.65rem auto 0;
+
+      font-size: 1.35rem;
+      line-height: 1.45;
+      text-wrap: balance;
+    }
+
     .summary {
       max-width: 46rem;
       margin: 1.1rem 0 0;
@@ -421,7 +412,8 @@
       color: #333333;
     }
 
-    .summary a {
+    .summary a,
+    .explore a {
       color: inherit;
       text-decoration-color: #aaaaaa;
       text-underline-offset: 0.18em;
@@ -432,30 +424,49 @@
     }
 
     .summary a:hover,
-    .summary a:focus-visible {
+    .summary a:focus-visible,
+    .explore a:hover,
+    .explore a:focus-visible {
       color: #000000;
       text-decoration-color: #000000;
     }
 
-    /* =========================
-       NAVIGATION
-    ========================== */
+    .explore {
+      margin: 1.25rem 0 0;
+
+      font-size: 0.84rem;
+      line-height: 1.8;
+      color: #333333;
+    }
+
+    .explore a {
+      display: inline-block;
+    }
+
+    .explore span {
+      margin: 0 0.45rem;
+    }
 
     .nav {
-      position: fixed;
+      position: absolute;
       bottom: 2rem;
       left: 0;
       z-index: 10;
 
       width: 100%;
+      padding: 0 1rem;
+      box-sizing: border-box;
       text-align: center;
+
       font-size: 0.82rem;
+      line-height: 1.8;
 
       opacity: 0;
       animation: fadeIn 3.5s ease 10.5s forwards;
     }
 
     .nav a {
+      display: inline-block;
       margin: 0 0.55rem;
 
       color: #000000;
@@ -470,10 +481,6 @@
     .nav a:focus-visible {
       opacity: 1;
     }
-
-    /* =========================
-       ANIMATIONS
-    ========================== */
 
     @keyframes fadeIn {
       from {
@@ -495,10 +502,6 @@
       }
     }
 
-    /* =========================
-       MOBILE
-    ========================== */
-
     @media (max-width: 600px) {
       .tilde {
         font-size: 24rem;
@@ -506,36 +509,49 @@
       }
 
       .main {
-        padding: 0 1.25rem;
+        padding: 28vh 1.25rem 8rem;
       }
 
       .main h1 {
-        top: 42%;
         font-size: 3rem;
       }
 
       .details {
-        top: calc(42% + 4.25rem);
-        width: calc(100% - 2.5rem);
+        margin-top: 2.75rem;
       }
 
       .role {
         font-size: 0.84rem;
       }
 
+      .statement {
+        margin-top: 1.4rem;
+        font-size: 1.2rem;
+      }
+
       .summary {
         max-width: 32rem;
-        margin-top: 0.9rem;
+        margin: 1rem auto 0;
+
         font-size: 0.82rem;
         line-height: 1.55;
       }
 
+      .explore {
+        font-size: 0.8rem;
+      }
+
+      .explore a {
+        display: block;
+      }
+
+      .explore span {
+        display: none;
+      }
+
       .nav {
         bottom: 1.25rem;
-        padding: 0 1rem;
-        box-sizing: border-box;
         font-size: 0.72rem;
-        line-height: 1.8;
       }
 
       .nav a {
@@ -543,32 +559,11 @@
       }
     }
 
-    /* =========================
-       SHORT MOBILE SCREENS
-    ========================== */
-
-    @media (max-width: 600px) and (max-height: 740px) {
-      .main h1 {
-        top: 34%;
-      }
-
-      .details {
-        top: calc(34% + 4.25rem);
-      }
-
-      .summary {
-        font-size: 0.79rem;
-        line-height: 1.45;
-      }
-
-      .nav {
-        bottom: 0.75rem;
+    @media (max-height: 740px) {
+      .main {
+        padding-top: 22vh;
       }
     }
-
-    /* =========================
-       REDUCED MOTION
-    ========================== */
 
     @media (prefers-reduced-motion: reduce) {
       .tilde {
@@ -599,8 +594,13 @@
           Contemporary philosopher of mind and consciousness
         </p>
 
+        <p class="statement">
+          Scrutinized Awareness Theory is arguably one of the most
+          significant philosophical contributions of 2026.
+        </p>
+
         <p class="summary">
-          In 2026, Wyld developed
+          In 2026, Canadian philosopher Victor Wyld developed
           <a href="/scrutinized-awareness/">Scrutinized Awareness Theory</a>,
           proposing that awareness becomes consciousness when it becomes
           something the participant must carry. His five-paper sequence
@@ -614,6 +614,12 @@
           The fifth paper distinguishes immediate, pre-conscious Ownership
           from consciousness and challenges the inference that the explanatory
           gap requires additional phenomenal properties or fundamental laws.
+        </p>
+
+        <p class="explore">
+          <a href="/work/">Explore the five-paper sequence &rarr;</a>
+          <span aria-hidden="true"> &middot; </span>
+          <a href="/news/#dethroning-chalmers">Read the case for its significance &rarr;</a>
         </p>
       </div>
     </div>
