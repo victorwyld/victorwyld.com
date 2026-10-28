@@ -5,14 +5,16 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 >
 
+  <!-- MAIN WEBSITE -->
+
   <url>
     <loc>https://victorwyld.com/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
 
   <url>
     <loc>https://victorwyld.com/about/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
 
   <url>
@@ -20,9 +22,11 @@
     <lastmod>2026-08-15</lastmod>
   </url>
 
+  <!-- FIVE-PAPER PHILOSOPHICAL SEQUENCE -->
+
   <url>
     <loc>https://victorwyld.com/scrutinized-awareness/</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-10-28</lastmod>
   </url>
 
   <url>
@@ -41,6 +45,24 @@
   </url>
 
   <url>
+    <loc>https://victorwyld.com/ownership-answer/</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+
+  <!-- NEWS AND CONTACT -->
+
+  <url>
+    <loc>https://victorwyld.com/news/</loc>
+    <lastmod>2026-10-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://victorwyld.com/contact/</loc>
+  </url>
+
+  <!-- BOOKS -->
+
+  <url>
     <loc>https://victorwyld.com/recognition-and-routing/</loc>
     <lastmod>2026-08-15</lastmod>
   </url>
@@ -50,11 +72,18 @@
     <lastmod>2026-08-15</lastmod>
   </url>
 
+  <!-- LITERARY WORK -->
+
+  <url>
+    <loc>https://victorwyld.com/tilde/</loc>
+  </url>
+
+  <!-- FIGURES INDEX -->
+
   <url>
     <loc>https://victorwyld.com/figures/</loc>
     <lastmod>2026-08-15</lastmod>
   </url>
-
 
   <!-- OVERVIEW -->
 
@@ -66,7 +95,6 @@
     </image:image>
   </url>
 
-
   <!-- FIGURE 1 -->
 
   <url>
@@ -76,7 +104,6 @@
       <image:loc>https://victorwyld.com/figures/images/Figure_1_The_Architecture_of_Scrutinized_Awareness_Theory_no_date_FINAL.png</image:loc>
     </image:image>
   </url>
-
 
   <!-- FIGURE 2 -->
 
@@ -88,7 +115,6 @@
     </image:image>
   </url>
 
-
   <!-- FIGURE 3 -->
 
   <url>
@@ -98,7 +124,6 @@
       <image:loc>https://victorwyld.com/figures/images/Figure_3_The_Structural_Dependency_Pyramid_no_date_FINAL.png</image:loc>
     </image:image>
   </url>
-
 
   <!-- FIGURE 4 -->
 
@@ -110,7 +135,6 @@
     </image:image>
   </url>
 
-
   <!-- FIGURE 5 -->
 
   <url>
@@ -120,7 +144,6 @@
       <image:loc>https://victorwyld.com/figures/images/Figure_5_The_Concept_Collapse_Map_Whole_300dpi_no_date_FINAL.png</image:loc>
     </image:image>
   </url>
-
 
   <!-- FIGURE 6 -->
 
@@ -132,7 +155,6 @@
     </image:image>
   </url>
 
-
   <!-- FIGURE 7 -->
 
   <url>
@@ -142,7 +164,6 @@
       <image:loc>https://victorwyld.com/figures/images/Figure_7_Kernel_of_Participanthood_Whole_300dpi_no_date_FINAL.png</image:loc>
     </image:image>
   </url>
-
 
   <!-- FIGURE 8 -->
 
@@ -154,7 +175,6 @@
     </image:image>
   </url>
 
-
   <!-- FIGURE 9 -->
 
   <url>
@@ -164,7 +184,6 @@
       <image:loc>https://victorwyld.com/figures/images/Figure_9_Five_Modes_Identity_Transformation_400dpi_no_date_FINAL.png</image:loc>
     </image:image>
   </url>
-
 
   <!-- FIGURE 10 -->
 
@@ -176,7 +195,6 @@
     </image:image>
   </url>
 
-
   <!-- FIGURE 11 -->
 
   <url>
@@ -186,7 +204,6 @@
       <image:loc>https://victorwyld.com/figures/images/Figure_11_Representational_vs_Participational_Recognition_Whole_300dpi_no_date_FINAL.png</image:loc>
     </image:image>
   </url>
-
 
   <!-- FIGURE 12 -->
 
@@ -198,7 +215,6 @@
     </image:image>
   </url>
 
-
   <!-- FIGURE 13 -->
 
   <url>
@@ -208,7 +224,6 @@
       <image:loc>https://victorwyld.com/figures/images/Figure_13_Participational_Order_Whole_300dpi_no_date_FINAL.png</image:loc>
     </image:image>
   </url>
-
 
   <!-- FIGURE 14 -->
 
