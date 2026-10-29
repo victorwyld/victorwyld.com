@@ -9,7 +9,7 @@
 
   <url>
     <loc>https://victorwyld.com/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
     <image:image>
       <image:loc>https://victorwyld.com/images/victor-wyld/victor-wyld-canadian-philosopher-colour-portrait.jpg</image:loc>
     </image:image>
@@ -34,7 +34,7 @@
 
   <url>
     <loc>https://victorwyld.com/work/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
   </url>
 
   <!-- FIVE-PAPER PHILOSOPHICAL SEQUENCE -->
@@ -64,11 +64,17 @@
     <lastmod>2026-10-28</lastmod>
   </url>
 
+  <!-- COMPLETE FULL-TEXT PAPER -->
+  <url>
+    <loc>https://victorwyld.com/the-ownership-answer-publication/</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+
   <!-- NEWS AND CONTACT -->
 
   <url>
     <loc>https://victorwyld.com/news/</loc>
-    <lastmod>2026-10-28</lastmod>
+    <lastmod>2026-10-29</lastmod>
   </url>
 
   <url>
