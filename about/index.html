@@ -457,15 +457,11 @@
       }
     }
 
-    .portrait-gallery { margin: 2.5rem 0 3rem; }
-    .portrait-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
-    .portrait-grid figure { margin: 0; min-width: 0; }
-    .portrait-grid a { display: block; }
-    .portrait-grid img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
-    .portrait-grid figcaption { font-size: 0.92rem; line-height: 1.45; margin-top: 0.6rem; color: #444; }
-    .portrait-grid a:focus-visible { outline: 2px solid #333; outline-offset: 4px; }
+    /* Editorial portrait: a single quiet image, not a tiled gallery. */
+    .editorial-portrait { width: min(205px, 45%); float: right; margin: 0.2rem 0 1.3rem 2rem; }
+    .editorial-portrait img { display: block; width: 100%; height: auto; border: 1px solid rgba(0,0,0,.13); box-sizing: border-box; }
     @media (max-width: 520px) {
-      .portrait-grid { grid-template-columns: 1fr; max-width: 360px; margin-inline: auto; }
+      .editorial-portrait { float: none; width: min(175px, 55%); margin: .5rem auto 1.8rem; }
     }
   </style>
 </head>
@@ -487,36 +483,11 @@
         Wyld's solution preserves the reality of subjective experience while challenging the inference that an explanatory gap requires additional phenomenal ontology. It combines a critical examination of the Hard Problem's premises with a positive account of Ownership, sensation, and consciousness.
       </p>
 
-      <section class="portrait-gallery" id="portraits" aria-labelledby="portraits-heading">
-        <h2 id="portraits-heading">Portraits of Victor Wyld</h2>
-        <p>Victor Wyld, Canadian philosopher and author of <em>Scrutinized Awareness Theory</em> and <em>The Ownership Answer: What It Is Like</em>.</p>
-        <div class="portrait-grid">
-          <figure>
-            <a href="/images/victor-wyld/victor-wyld-canadian-philosopher-colour-portrait.jpg" aria-label="View full-size victor wyld — colour portrait">
-              <img src="/images/victor-wyld/victor-wyld-canadian-philosopher-colour-portrait.jpg" alt="Victor Wyld, Canadian philosopher and author, facing the camera in a dark shirt." width="1254" height="1254" loading="lazy" decoding="async">
-            </a>
-            <figcaption>Victor Wyld · Colour portrait</figcaption>
-          </figure>
-          <figure>
-            <a href="/images/victor-wyld/victor-wyld-philosopher-black-and-white-portrait.jpg" aria-label="View full-size victor wyld — black-and-white portrait">
-              <img src="/images/victor-wyld/victor-wyld-philosopher-black-and-white-portrait.jpg" alt="Black-and-white portrait of Canadian philosopher Victor Wyld in a dark jacket." width="1122" height="1402" loading="lazy" decoding="async">
-            </a>
-            <figcaption>Victor Wyld · Black-and-white portrait</figcaption>
-          </figure>
-          <figure>
-            <a href="/images/victor-wyld/victor-wyld-author-portrait-with-glasses.jpg" aria-label="View full-size victor wyld — portrait with glasses">
-              <img src="/images/victor-wyld/victor-wyld-author-portrait-with-glasses.jpg" alt="Victor Wyld wearing glasses and a dark shirt, looking toward a window beside a bookcase." width="1085" height="1450" loading="lazy" decoding="async">
-            </a>
-            <figcaption>Victor Wyld · Portrait with glasses</figcaption>
-          </figure>
-          <figure>
-            <a href="/images/victor-wyld/victor-wyld-informal-portrait-round-sunglasses.jpg" aria-label="View full-size victor wyld — informal portrait">
-              <img src="/images/victor-wyld/victor-wyld-informal-portrait-round-sunglasses.jpg" alt="Victor Wyld wearing round sunglasses and a rust-coloured jacket in an informal indoor portrait." width="1152" height="1536" loading="lazy" decoding="async">
-            </a>
-            <figcaption>Victor Wyld · Informal portrait with round sunglasses</figcaption>
-          </figure>
-        </div>
-      </section>
+      <figure class="editorial-portrait" id="portraits">
+        <img src="/images/victor-wyld/victor-wyld-philosopher-black-and-white-portrait.jpg"
+          alt="Black-and-white three-quarter portrait of Victor Wyld in a dark jacket, looking to one side."
+          width="1122" height="1402" loading="lazy" decoding="async">
+      </figure>
 
       <h2>Scrutinized Awareness Theory</h2>
 
