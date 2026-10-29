@@ -588,12 +588,10 @@
         margin: 0 0.9rem 0.75rem 0;
       }
     }
-    /* Small close-cropped candid: the original television is outside the displayed frame.
-       Original asset is retained; a true source-image retouch remains separate. */
-    .work-portrait { width: 172px; max-width: 38%; float: right; margin: 0 0 1.4rem 1.75rem; }
-    .work-portrait-crop { position: relative; overflow: hidden; width: 172px; max-width: 100%; height: 215px; background: #ddd; border: 1px solid rgba(0,0,0,.12); box-sizing: border-box; }
-    .work-portrait-crop img { display: block; position: absolute; width: 365px; max-width: none; height: auto; left: -73px; top: -108px; }
-    @media (max-width: 520px) { .work-portrait { float: none; margin: 1.1rem auto 1.5rem; max-width: 60%; } }
+    /* Show the complete source portrait instead of cutting away the face with an absolute-positioned crop. */
+    .work-portrait { width: 216px; max-width: 38%; float: right; margin: 0 0 1.4rem 1.75rem; }
+    .work-portrait img { display: block; width: 100%; height: auto; border: 1px solid rgba(0,0,0,.12); border-radius: 5px; }
+    @media (max-width: 520px) { .work-portrait { float: none; width: 216px; margin: 1.1rem auto 1.5rem; max-width: 70%; } }
   </style>
 </head>
 
@@ -955,11 +953,9 @@
     </p>
 
     <figure class="work-portrait" aria-label="Informal portrait of Victor Wyld in round gold sunglasses">
-      <div class="work-portrait-crop">
-        <img src="/images/victor-wyld/victor-wyld-informal-portrait-round-sunglasses.jpg"
-             alt="Victor Wyld wearing round gold sunglasses and a rust-coloured jacket."
-             width="1152" height="1536" loading="lazy" decoding="async">
-      </div>
+      <img src="/images/victor-wyld/victor-wyld-informal-portrait-round-sunglasses.jpg"
+           alt="Victor Wyld wearing round gold sunglasses and a rust-coloured jacket."
+           width="1152" height="1536" loading="lazy" decoding="async">
     </figure>
 
     <h2>Books and Essays</h2>
