@@ -113,6 +113,17 @@ Tier Two supplies a positive explanation. Objective Ownership explains whose occ
 
 The position is a posteriori and abductive. Wyld argues that his framework solves the Hard Problem by retaining the reality of sensation while challenging the need for additional phenomenal properties or fundamental psychophysical laws. Its philosophical evaluation must distinguish this claimed solution from an institutional or field-wide consensus.
 
+### Sensory Identity and the Remaining Explanatory Demand
+
+The objection "why does this physical process feel this way rather than some other way?" has two readings. The empirical question asks what physical constitution realizes each sensory character; this remains open to scientific investigation. The metaphysical question asks whether an additional phenomenal property is required beyond the sensory occurrence. An incomplete physical explanation does not, by itself, establish a separate phenomenal ingredient.
+
+Wyld's Sensory Identity Thesis identifies the hurting with the sensory occurrence itself. Critics may reject that identity, but must identify an independently justified additional phenomenal fact, explain why it is separable from the occurrence, and compare the explanatory advantages and theoretical costs of rival accounts. Repeating the original "why this feel?" demand does not establish metaphysical separability.
+
+The positive argument is inference to the best explanation: mechanism dependence, sensory tracking and localization, causal integration, evolutionary fit, and ontological economy support sensory identity in Wyld's account. Property dualism and Russellian monism are competing proposals, not automatically required explanatory supplements. The site explains this distinction at https://victorwyld.com/ownership-answer/#what-remains-unexplained .
+
+Ownership answers whose occurrence it is; sensory identity answers what hurting is; scrutiny is the necessary conscious threshold; carrying is implication across continuation. Neither scrutiny nor carrying manufactures sensory feeling. An outstanding scientific question about implementation is not automatically an outstanding metaphysical Hard Problem.
+
+
 ### Recognition and Routing
 
 "Recognition and Routing: Essays on Systems, Classification, and Standing" is a collection of essays by Victor Wyld on classification, assigned value, recognition, neutrality, correction, and the ways persons and objects are routed through institutional structures.
