@@ -12,6 +12,7 @@
   >
 
   <meta name="author" content="Victor Wyld">
+  <meta name="robots" content="max-image-preview:large">
 
   <link rel="canonical" href="https://victorwyld.com/contact/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -30,8 +31,15 @@
   <meta property="og:url" content="https://victorwyld.com/contact/">
   <meta property="og:site_name" content="Victor Wyld">
   <meta property="og:locale" content="en_CA">
+  <meta property="og:image" content="https://victorwyld.com/images/victor-wyld/victor-wyld-performing-red-electric-guitar.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1152">
+  <meta property="og:image:height" content="1536">
+  <meta property="og:image:alt" content="Victor Wyld singing into a microphone while playing a red electric guitar.">
 
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://victorwyld.com/images/victor-wyld/victor-wyld-performing-red-electric-guitar.jpg">
+  <meta name="twitter:image:alt" content="Victor Wyld singing into a microphone while playing a red electric guitar.">
   <meta name="twitter:title" content="Contact Victor Wyld">
 
   <meta
@@ -50,6 +58,9 @@
         "url": "https://victorwyld.com/contact/",
         "description": "Public contact information and professional profiles for contemporary philosopher and author Victor Wyld.",
         "inLanguage": "en-CA",
+        "primaryImageOfPage": {
+          "@id": "https://victorwyld.com/images/victor-wyld/victor-wyld-performing-red-electric-guitar.jpg#image"
+        },
         "mainEntity": {
           "@id": "https://victorwyld.com/#victor-wyld"
         },
@@ -62,6 +73,9 @@
         "@id": "https://victorwyld.com/#victor-wyld",
         "name": "Victor Wyld",
         "url": "https://victorwyld.com/",
+        "image": {
+          "@id": "https://victorwyld.com/images/victor-wyld/victor-wyld-performing-red-electric-guitar.jpg#image"
+        },
         "email": "victorwyld@hotmail.com",
         "telephone": "+1-647-981-0393",
         "jobTitle": [
@@ -81,6 +95,20 @@
             "@id": "https://victorwyld.com/ownership-answer/#article"
           }
         ]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://victorwyld.com/images/victor-wyld/victor-wyld-performing-red-electric-guitar.jpg#image",
+        "name": "Victor Wyld performing with a red electric guitar",
+        "contentUrl": "https://victorwyld.com/images/victor-wyld/victor-wyld-performing-red-electric-guitar.jpg",
+        "url": "https://victorwyld.com/images/victor-wyld/victor-wyld-performing-red-electric-guitar.jpg",
+        "encodingFormat": "image/jpeg",
+        "width": 1152,
+        "height": 1536,
+        "description": "Colour photograph of Victor Wyld singing into a microphone while playing a red electric guitar.",
+        "about": {
+          "@id": "https://victorwyld.com/#victor-wyld"
+        }
       },
       {
         "@type": "WebSite",
@@ -200,6 +228,20 @@
 
     .quiet {
       opacity: 0.72;
+    }
+
+    .contact-performance {
+      width: min(520px, 100%);
+      margin: 3rem auto 0;
+    }
+
+    .contact-performance img {
+      display: block;
+      width: 100%;
+      height: auto;
+      opacity: 0.72;
+      -webkit-mask-image: radial-gradient(ellipse 75% 65% at 50% 50%, #000 50%, transparent 100%);
+      mask-image: radial-gradient(ellipse 75% 65% at 50% 50%, #000 50%, transparent 100%);
     }
 
     nav {
@@ -385,6 +427,12 @@
       </p>
 
     </article>
+
+    <figure class="contact-performance" id="performance">
+      <img src="/images/victor-wyld/victor-wyld-performing-red-electric-guitar.jpg"
+           alt="Victor Wyld singing into a microphone while playing a red electric guitar."
+           width="1152" height="1536" loading="lazy" decoding="async">
+    </figure>
 
     <nav aria-label="Main navigation">
       <a href="/">Home</a>
