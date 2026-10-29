@@ -354,6 +354,8 @@
         "@id": "https://victorwyld.com/images/victor-wyld/victor-wyld-canadian-philosopher-colour-portrait.jpg#image",
         "name": "Victor Wyld — colour portrait",
         "contentUrl": "https://victorwyld.com/images/victor-wyld/victor-wyld-canadian-philosopher-colour-portrait.jpg",
+        "license": "https://victorwyld.com/image-rights/",
+        "acquireLicensePage": "https://victorwyld.com/contact/",
         "url": "https://victorwyld.com/images/victor-wyld/victor-wyld-canadian-philosopher-colour-portrait.jpg",
         "encodingFormat": "image/jpeg",
         "width": 1254,
@@ -371,6 +373,8 @@
         "@id": "https://victorwyld.com/images/victor-wyld/victor-wyld-philosopher-black-and-white-portrait.jpg#image",
         "name": "Victor Wyld — black-and-white portrait",
         "contentUrl": "https://victorwyld.com/images/victor-wyld/victor-wyld-philosopher-black-and-white-portrait.jpg",
+        "license": "https://victorwyld.com/image-rights/",
+        "acquireLicensePage": "https://victorwyld.com/contact/",
         "url": "https://victorwyld.com/images/victor-wyld/victor-wyld-philosopher-black-and-white-portrait.jpg",
         "encodingFormat": "image/jpeg",
         "width": 1122,
@@ -388,6 +392,8 @@
         "@id": "https://victorwyld.com/images/victor-wyld/victor-wyld-author-portrait-with-glasses.jpg#image",
         "name": "Victor Wyld — portrait with glasses",
         "contentUrl": "https://victorwyld.com/images/victor-wyld/victor-wyld-author-portrait-with-glasses.jpg",
+        "license": "https://victorwyld.com/image-rights/",
+        "acquireLicensePage": "https://victorwyld.com/contact/",
         "url": "https://victorwyld.com/images/victor-wyld/victor-wyld-author-portrait-with-glasses.jpg",
         "encodingFormat": "image/jpeg",
         "width": 1085,
@@ -402,14 +408,16 @@
       },
       {
         "@type": "ImageObject",
-        "@id": "https://victorwyld.com/images/victor-wyld/victor-wyld-ottawa-chateau-laurier-august-2026-retouched.avif#image",
-        "name": "Victor Wyld — Ottawa portrait, August 2026",
-        "contentUrl": "https://victorwyld.com/images/victor-wyld/victor-wyld-ottawa-chateau-laurier-august-2026-retouched.avif",
-        "url": "https://victorwyld.com/images/victor-wyld/victor-wyld-ottawa-chateau-laurier-august-2026-retouched.avif",
-        "encodingFormat": "image/avif",
-        "width": 720,
-        "height": 960,
-        "caption": "Victor Wyld at the Fairmont Château Laurier, Ottawa — August 2026, during the writing of his Scrutinized Awareness Theory papers.",
+        "@id": "https://victorwyld.com/images/victor-wyld/victor-wyld-informal-portrait-round-sunglasses.jpg#image",
+        "name": "Victor Wyld — informal portrait in round sunglasses",
+        "contentUrl": "https://victorwyld.com/images/victor-wyld/victor-wyld-informal-portrait-round-sunglasses.jpg",
+        "license": "https://victorwyld.com/image-rights/",
+        "acquireLicensePage": "https://victorwyld.com/contact/",
+        "url": "https://victorwyld.com/images/victor-wyld/victor-wyld-informal-portrait-round-sunglasses.jpg",
+        "encodingFormat": "image/jpeg",
+        "width": 1152,
+        "height": 1536,
+        "caption": "Victor Wyld wearing round sunglasses and a rust-coloured jacket.",
         "contentLocation": { "@type": "Place", "name": "Fairmont Château Laurier", "address": { "@type": "PostalAddress", "addressLocality": "Ottawa", "addressRegion": "ON", "addressCountry": "CA" } },
         "about": {
           "@id": "https://victorwyld.com/#victor-wyld"
@@ -590,10 +598,10 @@
       }
     }
     /* Show the complete source portrait instead of cutting away the face with an absolute-positioned crop. */
-    .work-portrait { width: 216px; max-width: 38%; float: right; margin: 0 0 1.4rem 1.75rem; }
-    .work-portrait img { display: block; width: 100%; height: auto; border: 1px solid rgba(0,0,0,.12); border-radius: 5px; }
+    .work-portrait { width: 165px; max-width: 38%; float: right; margin: 0 0 1.4rem 1.75rem; overflow: hidden; aspect-ratio: 4 / 5; }
+    .work-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 31%; transform: scale(1.17); border: 1px solid rgba(0,0,0,.12); border-radius: 5px; }
     .work-portrait figcaption { margin-top: .6rem; font-size: .78rem; line-height: 1.45; color: #555; font-style: italic; }
-    @media (max-width: 520px) { .work-portrait { float: none; width: 216px; margin: 1.1rem auto 1.5rem; max-width: 70%; } }
+    @media (max-width: 520px) { .work-portrait { float: none; width: 165px; margin: 1.1rem auto 1.5rem; max-width: 70%; } }
   </style>
 </head>
 
@@ -954,11 +962,11 @@
       </a>.
     </p>
 
-    <figure class="work-portrait" aria-label="Victor Wyld in Ottawa during his 2026 philosophy papers">
-      <img src="/images/victor-wyld/victor-wyld-ottawa-chateau-laurier-august-2026-retouched.avif"
-           alt="Victor Wyld wearing round gold sunglasses and a rust-coloured jacket in Ottawa in August 2026."
+    <figure class="work-portrait" aria-label="Informal portrait of Victor Wyld in round sunglasses">
+      <img src="/images/victor-wyld/victor-wyld-informal-portrait-round-sunglasses.jpg"
+           alt="Victor Wyld wearing round gold sunglasses and a rust-coloured jacket."
            width="720" height="960" loading="lazy" decoding="async">
-      <figcaption>Victor Wyld at the Fairmont Ch&acirc;teau Laurier, Ottawa &mdash; August 2026, during the writing of his Scrutinized Awareness Theory papers.</figcaption>
+      
     </figure>
 
     <h2>Books and Essays</h2>
@@ -1038,6 +1046,8 @@
       Carrying is continuation.
       The character of sensation belongs to the sensory occurrence itself.
     </p>
+    <p class="image-rights-link" style="font-size:0.9rem;color:#555;margin-top:2rem"><a href="/image-rights/">Image rights and permissions</a></p>
+
 
     <nav aria-label="Main navigation">
       <a href="/">Home</a>
