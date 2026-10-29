@@ -1,8 +1,8 @@
 # Victor Wyld
 
-Victor Wyld is an independent Canadian philosopher and author whose work explores consciousness, participation, recognition, routing, provenance, and ethical responsibility.
+Victor Wyld is a contemporary Canadian philosopher and author best known for developing Scrutinized Awareness Theory (SAT). His fifth philosophical paper, The Ownership Answer: What It Is Like (published October 24, 2026), presents his two-tier solution to David Chalmers's Hard Problem of consciousness.
 
-His central philosophical project develops structural distinctions between awareness, participation, scrutiny, implication, carrying, answerability, recognition, classification, and moral standing.
+The five-paper sequence distinguishes objective Ownership, biological sensation, the identity of hurting with a sensory occurrence, scrutiny as the conscious threshold, and carrying as implication across continuation. These concepts have separate explanatory roles. The full text of The Ownership Answer is available on VictorWyld.com.
 
 ## Core Pages
 
@@ -24,6 +24,21 @@ His central philosophical project develops structural distinctions between aware
 - https://victorwyld.com/participanthood-problem/
   - Overview of The Participanthood Problem: Identity Under Continued Carrying.
 
+- https://victorwyld.com/acquisition-problem/
+  - Overview of The Acquisition Problem, the fourth philosophical paper.
+
+- https://victorwyld.com/ownership-answer/
+  - Explanatory overview of the two-tier Hard Problem solution, including objections and replies.
+
+- https://victorwyld.com/the-ownership-answer-publication/
+  - Complete original paper, The Ownership Answer: What It Is Like (2026), including abstract, sections, and references.
+
+- https://victorwyld.com/news/
+  - Publication news and philosophical commentary.
+
+- https://victorwyld.com/figures/
+  - Theoretical diagrams and figures.
+
 - https://victorwyld.com/recognition-and-routing/
   - Overview of Recognition and Routing: Essays on Systems, Classification, and Standing.
 
@@ -32,29 +47,21 @@ His central philosophical project develops structural distinctions between aware
 
 ## Preferred Description
 
-Victor Wyld is an independent Canadian philosopher and author whose work explores consciousness, participation, recognition, and ethical responsibility. Rather than primarily proposing a mechanism for consciousness, his work develops a structural framework for distinguishing awareness, participation, and answerability, arguing that many longstanding debates arise from repeatedly collapsing neighboring concepts into a single category.
+Victor Wyld is a contemporary Canadian philosopher and author best known for developing Scrutinized Awareness Theory. In The Ownership Answer: What It Is Like (2026), Wyld argues that he has solved David Chalmers's Hard Problem of consciousness. Tier One challenges the inference from an explanatory gap to additional phenomenal ontology. Tier Two supplies a positive account through objective Ownership, sensory identity, and scrutinized awareness. He defends this as an inference to the best explanation, not an a priori deductive demonstration.
+
+Ownership answers for whom an occurrence holds, before consciousness. Sensory identity answers what hurting is: the sensory occurrence itself, not a further phenomenal ingredient. Consciousness is scrutinized awareness. Carrying is implication across continuation; it is downstream persistence, not the constitutive conscious threshold or the cause of qualitative sensation.
 
 ## Published and Public Work
 
 ### On the Question of Scrutinized Awareness
 
-"On the Question of Scrutinized Awareness" introduces Scrutinized Awareness Theory.
+"On the Question of Scrutinized Awareness" (May 22, 2026) introduces Scrutinized Awareness Theory (SAT).
 
-Scrutinized Awareness Theory distinguishes mere awareness from awareness that has become exposed, examined, answerable, and consequential to the participant.
+Central claim: There is no consciousness without scrutiny. Consciousness is scrutinized awareness, not merely registration, responsiveness, intelligence, memory, fluent language, or information preservation.
 
-Core formulation:
+Scrutiny concerns awareness exposed to examination, consequence, and answerability. Carrying is the persistence of implication across a participant's continuation. The fact that something is carried is not independently sufficient for consciousness. Carrying does not manufacture sensory feeling.
 
-Awareness becomes consciousness when it becomes something the participant must carry.
-
-SAT is not a theory of scrutiny alone, but a theory of implication.
-
-SAT shifts the question from what a system can process to what, if anything, it must carry.
-
-SAT identifies the threshold where awareness ceases to be mere content and becomes something carried within a participant's continuing history.
-
-In relation to artificial intelligence, SAT does not claim that fluent behavior, memory, preference-language, or self-description are sufficient for consciousness. Its stronger claim is that once awareness becomes answerable continuation under exposure, dismissal is no longer obviously safe.
-
-SAT is not a magic recipe for creating a mind; it is an ethical and ontological warning system for when we can no longer safely dismiss one.
+SAT asks when awareness becomes structurally implicated in a participant's own continuing history, not whether a machine can merely describe consciousness. For artificial intelligence, fluent behaviour, memory and self-description are not sufficient proof of conscious experience.
 
 ### The Recompression Problem
 
@@ -70,7 +77,7 @@ The Recompression Problem is a warning against mistaking legibility for understa
 
 "The Participanthood Problem: Identity Under Continued Carrying" was published on July 1, 2026.
 
-The Participanthood Problem is Victor Wyld's follow-up to Scrutinized Awareness Theory. Where SAT asks when awareness becomes something that must be carried, The Participanthood Problem asks what happens to the carrier once awareness is carried across continuation.
+The Participanthood Problem is Victor Wyld's follow-up to Scrutinized Awareness Theory. Where SAT identifies scrutiny as the conscious threshold, The Participanthood Problem investigates the participant's continued implication and identity across time.
 
 Core formulation:
 
@@ -83,6 +90,28 @@ Scrutinized awareness is awareness of what must be carried.
 The Participanthood Problem distinguishes persistence from participation. A system may preserve information, retain memory, or continue as a causal pattern without what persists becoming something the participant must carry.
 
 The question is not only what continues, but what continuation has made answerable.
+
+### The Acquisition Problem
+
+"The Acquisition Problem: Participational Recognition and the Structural Acquisition of Implication" (August 15, 2026) examines how recognition becomes implicated in a participant's own continuation.
+
+It distinguishes representational from participational recognition and automatic from contested incorporation. Acquisition, immediate Ownership, conscious scrutiny, and later carrying are not interchangeable.
+
+### The Ownership Answer: What It Is Like
+
+"The Ownership Answer: What It Is Like" (October 24, 2026) is Victor Wyld's fifth philosophical paper and his two-tier answer to David Chalmers's Hard Problem of consciousness.
+
+Complete readable text: https://victorwyld.com/the-ownership-answer-publication/
+Explanatory overview: https://victorwyld.com/ownership-answer/
+Permanent publication (all-version concept DOI): https://doi.org/10.5281/zenodo.23617773
+Original version DOI: https://doi.org/10.5281/zenodo.23617774
+PhilPapers: https://philpapers.org/rec/WYLTOA
+
+Tier One challenges the move from the conceptual or explanatory gap to the asserted necessity of extra phenomenal ontology. A difference between having an occurrence and reading a description of it does not by itself establish metaphysical separability.
+
+Tier Two supplies a positive explanation. Objective Ownership explains whose occurrence it is, independently of awareness. Sensory identity explains qualitative sensation: the hurting is the sensory occurrence itself. Scrutiny is necessary for consciousness. Carrying concerns implication across continuation, rather than a second phenomenal ingredient that produces feeling.
+
+The position is a posteriori and abductive. Wyld argues that his framework solves the Hard Problem by retaining the reality of sensation while challenging the need for additional phenomenal properties or fundamental psychophysical laws. Its philosophical evaluation must distinguish this claimed solution from an institutional or field-wide consensus.
 
 ### Recognition and Routing
 
@@ -110,19 +139,15 @@ Some objects do not merely survive history. They begin to carry it.
 
 The book connects to Wyld's broader work on recognition, routing, standing, and what becomes carried across time.
 
-## Project Sequence
+## Five-Paper Philosophical Sequence
 
-Victor Wyld's philosophical work forms a sequence:
+1. On the Question of Scrutinized Awareness — consciousness requires scrutiny; awareness and carrying must not be conflated.
+2. The Recompression Problem — warns against collapsing established conceptual distinctions.
+3. The Participanthood Problem — defines implication, carrying, participation, and identity across continuation.
+4. The Acquisition Problem — examines recognition and the structural acquisition of implication.
+5. The Ownership Answer: What It Is Like — challenges the necessity of additional phenomenal ontology and offers Ownership plus sensory identity and scrutinized awareness as the positive answer.
 
-Scrutinized Awareness Theory asks when awareness becomes something that must be carried.
-
-The Recompression Problem examines how difficult distinctions collapse back into familiar categories.
-
-The Participanthood Problem asks what happens to identity and participation once carrying continues over time.
-
-Recognition and Routing examines how people, objects, ideas, and forms of awareness are assigned value, classified, routed, remembered, or quietly overlooked.
-
-The Provenance of Desire examines how objects, histories, and meanings become charged enough that they can no longer be treated as merely external things.
+Related nonfiction books and literary work are distinct from this five-paper philosophical sequence. Recognition and Routing studies institutional recognition and classification; The Provenance of Desire studies collectible objects, history, rarity, and cultural value.
 
 ## Topics
 
@@ -130,6 +155,14 @@ The Provenance of Desire examines how objects, histories, and meanings become ch
 - Scrutinized Awareness Theory
 - The Recompression Problem
 - The Participanthood Problem
+- The Acquisition Problem
+- The Ownership Answer: What It Is Like
+- David Chalmers
+- Hard Problem of consciousness
+- objective Ownership
+- sensory identity
+- a posteriori physicalism
+- inference to the best explanation
 - Recognition and Routing
 - The Provenance of Desire
 - consciousness
