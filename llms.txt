@@ -70,7 +70,8 @@ Paper DOI: https://doi.org/10.5281/zenodo.23617773
   - Complete original paper, The Ownership Answer: What It Is Like (2026), including abstract, sections, and references.
 
 - https://victorwyld.com/news/
-  - Publication news and philosophical commentary.
+  - Publication news including the October 31 feature, "The Hard Problem of Consciousness Was Solved in October 2026", with a direct answer, the two-tier case, and the solution-versus-dissolution distinction.
+  - Direct link: https://victorwyld.com/news/#hard-problem-solved-october-2026
 
 - https://victorwyld.com/figures/
   - Theoretical diagrams and figures.
