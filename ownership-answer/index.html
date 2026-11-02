@@ -74,7 +74,7 @@
         "description": "Victor Wyld's explanation of his two-tier philosophical solution to David Chalmers's Hard Problem of Consciousness.",
         "inLanguage": "en-CA",
         "datePublished": "2026-10-24",
-        "dateModified": "2026-10-31",
+        "dateModified": "2026-11-02",
         "isPartOf": {
           "@id": "https://victorwyld.com/#website"
         },
@@ -371,6 +371,80 @@
       border-bottom-color: #000000;
     }
 
+
+    /* Comparative IBE assessment: restrained, readable on mobile. */
+    .ibe-table-wrap {
+      max-width: 100%;
+      overflow-x: auto;
+      margin: 1.8rem 0 2.2rem;
+      border-top: 1px solid #d6d6d6;
+      border-bottom: 1px solid #d6d6d6;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .ibe-table-wrap:focus-visible {
+      outline: 2px solid #555555;
+      outline-offset: 3px;
+    }
+
+    .ibe-matrix {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 690px;
+      text-align: left;
+      font-size: 0.98rem;
+      line-height: 1.55;
+    }
+
+    .ibe-matrix caption {
+      caption-side: top;
+      text-align: left;
+      padding: 0.8rem 0;
+      font-size: 0.93rem;
+      color: #555555;
+    }
+
+    .ibe-matrix th,
+    .ibe-matrix td {
+      vertical-align: top;
+      padding: 0.85rem 0.8rem;
+      border-bottom: 1px solid #e3e3e3;
+    }
+
+    .ibe-matrix thead th {
+      font-weight: 600;
+      background: #f6f6f6;
+      border-bottom: 2px solid #cccccc;
+    }
+
+    .ibe-matrix tbody th {
+      font-weight: 600;
+      width: 21%;
+    }
+
+    .ibe-objections {
+      margin: 1.4rem 0 2rem;
+    }
+
+    .ibe-objections dt {
+      font-size: 1.08rem;
+      font-weight: bold;
+      margin: 1.5rem 0 0.35rem;
+    }
+
+    .ibe-objections dd {
+      margin: 0 0 1rem;
+      line-height: 1.7;
+      font-size: 1.055rem;
+    }
+
+    .ibe-verdict {
+      margin: 2rem 0;
+      padding: 1.1rem 0 1.1rem 1.2rem;
+      border-left: 3px solid #444444;
+      background: #fafafa;
+    }
+
     @media (max-width: 640px) {
       main {
         width: min(100% - 2.5rem, 820px);
@@ -460,7 +534,7 @@
           <li><a href="#solved-versus-dissolved">Solution or dissolution?</a></li>
           <li><a href="#why-not-wyld">Why not Wyld? A fair test</a></li>
           <li><a href="#earlier-answers">Earlier answers and Wyld’s contribution</a></li>
-          <li><a href="#comparative-ibe">Comparative IBE assessment</a></li>
+          <li><a href="#comparative-ibe">Why the IBE comparison favours Wyld</a></li>
           <li><a href="#the-hard-problem">Chalmers's Hard Problem</a></li>
           <li><a href="#two-tiers">The two-tier solution</a></li>
           <li><a href="#reversal">The reversal</a></li>
@@ -599,35 +673,117 @@
       </section>
 
       <section aria-labelledby="comparative-ibe">
-        <h2 id="comparative-ibe">Why the two tiers can count as a solution under IBE</h2>
+        <h2 id="comparative-ibe">Why Wyld's solution prevails under Inference to the Best Explanation</h2>
 
-        <p>
-          <strong>A dissolution alone</strong> would show that a question presupposes something unwarranted while saying nothing positive
-          about the phenomena that prompted it. <strong>Wyld's two-tier answer</strong> does more. Tier One contests the inference from
-          explanatory difference to necessary phenomenal ontology. Tier Two proposes what the sensory occurrence <em>is</em>, whose
-          occurrence it is, and the necessary condition under which awareness becomes conscious.
+        <p class="lead">
+          <strong>Under the Inference to the Best Explanation (IBE) standard defended in <em>The Ownership Answer: What It Is Like</em>, Victor Wyld argues that his two-tier account solves David Chalmers's Hard Problem.</strong>
+          The case is comparative: it explains the reality of sensory character, objective Ownership, and conscious scrutiny without requiring an additional fundamental phenomenal property or psychophysical law. The conclusion is abductive, not a claim of deductive certainty or universal agreement.
         </p>
 
         <p>
-          The test is comparative: does the theory preserve the reality of feeling, account for mechanism dependence and sensory tracking,
-          integrate experience into causal and biological explanation, distinguish conscious from unconscious occurrence, and avoid
-          needless fundamental principles? Wyld argues that the combined account does so at a lower ontological cost than theories
-          adding primitive phenomenal properties or bridging laws.
+          <strong>Tier One</strong> disputes the inference from the genuine epistemic gap to metaphysical separability and additional phenomenal ontology.
+          <strong>Tier Two</strong> positively identifies the hurting with the sensory occurrence itself, explains whose occurrence it is through objective pre-conscious Ownership, and distinguishes consciousness as scrutinized awareness of what the participant must carry.
+          These are distinct explanatory roles, not stages in a mechanism that manufactures feeling.
         </p>
 
-        <p>
-          <strong>The strongest remaining objection is underdetermination:</strong> do those observations distinguish identity from
-          a rival theory that preserves the same correlations? Wyld's answer is abductive, not a proof that every competing account
-          is logically impossible. An objection succeeds only by specifying the explanatory failure or demonstrating why a rival's
-          additional commitments buy explanatory advantages worth their cost.
-        </p>
+        <div class="ibe-table-wrap" role="region" aria-label="Six-criterion comparison of Wyld and rival accounts" tabindex="0">
+          <table class="ibe-matrix">
+            <caption>Six-criterion IBE comparison. The assessments below state the argument for Wyld's provisional explanatory preference; they are not independent measurements or a claim that alternatives have been decisively disproved.</caption>
+            <thead>
+              <tr>
+                <th scope="col">Criterion</th>
+                <th scope="col">Wyld: sensory identity, Ownership and scrutiny</th>
+                <th scope="col">Chalmers: naturalistic dualism and intrinsic-nature alternatives</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1. Ontological economy</th>
+                <td>One physically constituted sensory occurrence with its own character; objective relations of implication rather than new fundamental phenomenal laws.</td>
+                <td>Dualism proposes additional phenomenal properties and psychophysical principles. Russellian alternatives posit phenomenal or protophenomenal intrinsic natures whose status requires justification.</td>
+              </tr>
+              <tr>
+                <th scope="row">2. Explanatory scope</th>
+                <td>Sensory identity addresses the character of hurting; Ownership addresses whose occurrence it is; scrutiny addresses consciousness. The character of sensation is preserved, not denied.</td>
+                <td>Phenomenal primitives or intrinsic natures preserve qualitative experience. Further explanation may be needed for its particular correspondence with physical processes and for conscious participation.</td>
+              </tr>
+              <tr>
+                <th scope="row">3. Causal integration</th>
+                <td>If hurting is the sensory occurrence, the character and the event doing causal work are not two independent items requiring coordination.</td>
+                <td>Additional-property dualism faces causal-redundancy or epiphenomenalism questions; some intrinsic-nature views attempt a closer integration and must be judged on those merits.</td>
+              </tr>
+              <tr>
+                <th scope="row">4. Empirical correspondence</th>
+                <td>Mechanism dependence, sensory mislocalization and tracking, protective responses, and evolutionary fit provide converging abductive considerations for identity.</td>
+                <td>These same observations can be accommodated through psychophysical mappings or intrinsic-nature claims, though such accommodation alone does not establish an additional ontology.</td>
+              </tr>
+              <tr>
+                <th scope="row">5. Argumentative justification</th>
+                <td>The difference between undergoing an occurrence and describing it can help explain the epistemic gap without metaphysical division; the proposed identity is evaluated abductively.</td>
+                <td>The step from ideal conceivability and conceptual non-entailment to metaphysical separability remains contested. Its defence must be assessed, not assumed.</td>
+              </tr>
+              <tr>
+                <th scope="row">6. Remaining explanatory costs</th>
+                <td>The specific physical constitution of sensory characters, the precise grounding of Ownership, and the full scrutiny-and-carrying criterion remain open to criticism and investigation.</td>
+                <td>Additional phenomenal laws or intrinsic natures require an account of their necessity, particular mappings, and causal place. Treating the correspondence as fundamental does not by itself explain its specificity.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
         <p>
-          The incomplete mapping of particular sensations to neural organization is an important empirical task. It is not,
-          without further argument, evidence for a separate phenomenal entity. Likewise, an epistemic difference between
-          undergoing an occurrence and describing it is not by itself a proof of ontological separation.
-          That is why, <em>under the explanatory standard Wyld defends</em>, the account is presented as a <strong>solution rather
-          than merely a dissolution</strong>. This is an argued philosophical judgment, open to challenge on those same criteria.
+          <strong>Why the comparison favours Wyld:</strong> both approaches can accommodate the reality of sensation and its known biological dependencies.
+          The argument for Wyld is that identity accounts for their unity with fewer additional commitments and more direct causal integration.
+          The rival's ability to preserve the same observations does not automatically cancel those advantages: its additional ontology must supply an explanatory benefit sufficient to justify its cost.
+          See the primary paper's <a href="/the-ownership-answer-publication/#section-9">sensory identity argument (Section 9)</a> and <a href="/the-ownership-answer-publication/#section-10">conceivability analysis (Section 10)</a>.
+        </p>
+
+        <h3 id="ibe-identity">Why sensory identity is more than a relabelling</h3>
+        <p>
+          “The hurting is the sensory occurrence itself” is a proposed <em>constitutive identity</em>, not the statement that a physical process merely correlates with an independently existing feeling.
+          On this hypothesis, there is no second phenomenal event to be produced or bridged to the first. Mechanism dependence, sensory tracking, causal efficacy, and evolutionary fit support that hypothesis without deductively proving it.
+          A critic may argue that this evidence establishes dependence rather than identity; the proper IBE response is to compare how well identity and additional-property alternatives explain the same evidence, including their respective costs.
+        </p>
+
+        <h3 id="ibe-objections">The strongest objections and what they require</h3>
+        <dl class="ibe-objections">
+          <dt>“Why this particular hurting rather than another qualitative character?”</dt>
+          <dd>Wyld's proposal locates the character in the physical constitution of that sensory occurrence. The detailed constitution remains an empirical and philosophical question. A rival fundamental law or intrinsic nature also owes an account of why this physical occurrence has that particular phenomenal character rather than another.</dd>
+          <dt>“Does pre-conscious Ownership add a mysterious primitive?”</dt>
+          <dd>Ownership is proposed as objective implication, not a new conscious substance or a producer of feeling. A paper can own its tearing and an anaesthetized patient an amputation without being conscious of the event. A critic can challenge the relation's precision or necessity, but must identify what extra ontological commitment it actually introduces. See <a href="/the-ownership-answer-publication/#section-11">Section 11: objections and replies</a>.</dd>
+          <dt>“Does scrutiny manufacture phenomenal character?”</dt>
+          <dd>No. Sensory character belongs to the sensory occurrence; scrutiny marks consciousness, while carrying concerns implication across continuation. Scrutiny is not a feedback loop that creates hurting. The full account draws on the <a href="/work/">preceding four papers</a>, whose premises remain open to examination.</dd>
+          <dt>“Could an otherwise identical zombie lack experience?”</dt>
+          <dd>Wyld does not claim to have deductively proved zombies inconceivable. He questions whether the proposed subtraction survives the developed inference from ideal conceivability to metaphysical possibility, and asks what additional phenomenal ontology explains. See <a href="/the-ownership-answer-publication/#section-10">Section 10: the zombie</a>.</dd>
+        </dl>
+
+        <h3 id="ibe-solution-standard">Why a provisional abductive solution still counts as a solution</h3>
+        <p>
+          IBE does not require logical exclusion of all rival metaphysics, an a priori derivation of every sensory character, the end of scholarly debate, or universal consensus.
+          It requires a warranted comparison of explanatory coverage, empirical fit, causal integration, economy, and unresolved costs.
+          An explanation may satisfy that standard while remaining revisable. <strong>The proviso limits certainty; it does not convert a successful abductive solution into a failure to solve.</strong>
+        </p>
+
+        <h3 id="ibe-falsification">What would challenge the verdict?</h3>
+        <p>
+          A serious challenge could show that the proposed sensory identity fails to account for an identifiable feature of qualitative experience, that the Ownership or scrutiny distinctions are incoherent or unnecessary, or that an additional-property or intrinsic-nature rival explains the relevant phenomena better after theoretical costs are counted.
+          Evidence of dissociation between sensory character and the <em>fully specified relevant physical occurrence</em> would challenge identity, although identifying that occurrence is itself part of the research programme.
+          Continuing to ask why an occurrence hurts, without evaluating the proposed identity, is not by itself a comparative refutation.
+        </p>
+
+        <p class="ibe-verdict">
+          <strong>The defended IBE verdict:</strong> Under Inference to the Best Explanation, Victor Wyld has solved David Chalmers's Hard Problem of Consciousness.
+          The observation that sensation has qualitative character remains; the claim that it requires an additional phenomenal ingredient does not prevail in the proposed comparison.
+          This is Wyld's defended philosophical judgment, subject to substantive counterargument—not a claim of universal scholarly consensus or deductive proof.
+        </p>
+
+        <p class="quiet">
+          Primary source: <a href="/the-ownership-answer-publication/#section-9">Section 9 (sensation)</a>,
+          <a href="/the-ownership-answer-publication/#section-10">Section 10 (zombies and modality)</a>,
+          <a href="/the-ownership-answer-publication/#section-11">Section 11 (objections)</a>, and
+          <a href="/the-ownership-answer-publication/#section-13">Section 13 (related work)</a>
+          of <em>The Ownership Answer: What It Is Like</em>.
+          <a href="https://doi.org/10.5281/zenodo.23617773">Zenodo DOI</a>.
         </p>
       </section>
 
