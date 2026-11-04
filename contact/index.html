@@ -55,7 +55,7 @@
         "url": "https://victorwyld.com/contact/",
         "description": "Public contact information and professional profiles for Canadian philosopher and author Victor Wyld.",
         "inLanguage": "en-CA",
-        "dateModified": "2026-10-29",
+        "dateModified": "2026-11-04",
         "isPartOf": {
           "@id": "https://victorwyld.com/#website"
         },
@@ -226,18 +226,33 @@
       text-underline-offset: 0.18em;
     }
 
-    .contact-method {
-      margin: 2rem 0;
+    .contact-details {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem 2.2rem;
+      margin: 1rem 0 1.25rem;
+      padding: 1.6rem 0 1.5rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     }
 
-    .contact-method a {
+    .lead {
+      max-width: 43rem;
+      margin: 0 0 2.25rem;
+      font-size: 1.18rem;
+      line-height: 1.75;
+    }
+
+    .contact-method { min-width: 0; }
+
+    .contact-value a {
       color: #111111;
       text-decoration: none;
       border-bottom: 1px solid rgba(0, 0, 0, 0.35);
     }
 
-    .contact-method a:hover,
-    .contact-method a:focus-visible {
+    .contact-value a:hover,
+    .contact-value a:focus-visible {
       border-bottom-color: #000000;
     }
 
@@ -253,9 +268,29 @@
       overflow-wrap: anywhere;
     }
 
-    .contact-description {
-      font-size: 1rem;
+    .contact-note {
+      max-width: 42rem;
       color: #555555;
+      font-size: 1rem;
+    }
+
+    .resource-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem 2rem;
+      list-style: none;
+      padding: 0;
+      margin: 0.8rem 0 2rem;
+    }
+
+    .resource-list li {
+      padding: 0 0 0.5rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    a:focus-visible {
+      outline: 2px solid #111;
+      outline-offset: 4px;
     }
 
     .divider {
@@ -322,6 +357,18 @@
         font-size: 1.05rem;
       }
 
+      .contact-details,
+      .resource-list {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-details {
+        gap: 1.2rem;
+        padding: 1.25rem 0;
+      }
+
+      .lead { font-size: 1.08rem; }
+
       .contact-value {
         font-size: 1.15rem;
       }
@@ -362,144 +409,67 @@
   <main>
 
     <article>
-
       <header>
         <h1>Contact</h1>
-
-        <p class="subtitle">
-          Victor Wyld
-        </p>
+        <p class="subtitle">Victor Wyld · Canadian philosopher and author</p>
       </header>
 
-      <p>
-        Victor Wyld is a contemporary Canadian philosopher
-        and author whose work addresses consciousness,
-        subjective experience, Ownership, participation,
-        recognition, and the relationship between occurrences
-        and those to whom they belong.
+      <p class="lead">
+        For philosophical correspondence, publication enquiries, interviews,
+        lectures, and speaking engagements.
       </p>
 
-      <p>
-        Correspondence concerning his philosophical work,
-        academic discussion, publications, interviews,
-        and speaking engagements is welcome.
-      </p>
+      <section aria-labelledby="get-in-touch">
+        <h2 id="get-in-touch">Get in touch</h2>
 
-      <h2>Correspondence</h2>
+        <div class="contact-details">
+          <div class="contact-method">
+            <p class="contact-label">Email</p>
+            <p class="contact-value">
+              <a href="mailto:victorwyld@hotmail.com">victorwyld@hotmail.com</a>
+            </p>
+          </div>
 
-      <div class="contact-method">
-        <p class="contact-label">
-          Email
+          <div class="contact-method">
+            <p class="contact-label">Telephone</p>
+            <p class="contact-value">
+              <a href="tel:+16479810393">+1 (647) 981-0393</a>
+            </p>
+          </div>
+        </div>
+
+        <p class="contact-note">
+          Email is the preferred starting point for enquiries about published work,
+          interview requests, or proposed speaking engagements.
         </p>
+      </section>
 
-        <p class="contact-value">
-          <a href="mailto:victorwyld@hotmail.com">
-            victorwyld@hotmail.com
-          </a>
+      <section aria-labelledby="writing-and-profiles">
+        <h2 id="writing-and-profiles">Writing and public profiles</h2>
+        <p>
+          Read the philosophical papers, including the five-paper sequence on
+          Scrutinized Awareness Theory and <em>The Ownership Answer: What It Is Like</em>,
+          or follow new essays and commentary.
         </p>
+        <ul class="resource-list">
+          <li><a href="/work/">Papers and books</a></li>
+          <li><a href="/the-ownership-answer-publication/">Read <em>The Ownership Answer</em></a></li>
+          <li><a href="https://philpeople.org/profiles/victor-wyld" target="_blank" rel="noopener noreferrer">PhilPeople</a></li>
+          <li><a href="https://medium.com/@victorwyld" target="_blank" rel="noopener noreferrer">Medium essays</a></li>
+          <li><a href="https://x.com/victorwyld2" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
+        </ul>
+      </section>
 
-        <p class="contact-description">
-          For philosophical correspondence, publication inquiries,
-          academic discussion, interviews, and speaking engagements.
+      <section aria-labelledby="discussion-topics">
+        <h2 id="discussion-topics">Speaking and discussion</h2>
+        <p>
+          Topics include consciousness and subjective experience, Scrutinized Awareness
+          Theory, the Hard Problem of consciousness, objective Ownership, artificial
+          intelligence, participation, and recognition.
         </p>
-      </div>
+      </section>
 
-      <div class="contact-method">
-        <p class="contact-label">
-          Telephone
-        </p>
-
-        <p class="contact-value">
-          <a href="tel:+16479810393">
-            +1 (647) 981-0393
-          </a>
-        </p>
-
-        <p class="contact-description">
-          Telephone inquiries concerning publications,
-          interviews, lectures, and speaking engagements.
-        </p>
-      </div>
-
-      <hr class="divider">
-
-      <h2>Public profiles</h2>
-
-      <div class="contact-method">
-        <p class="contact-label">
-          X / Twitter
-        </p>
-
-        <p class="contact-value">
-          <a href="https://x.com/victorwyld2"
-             target="_blank"
-             rel="noopener noreferrer">
-            @victorwyld2
-          </a>
-        </p>
-
-        <p class="contact-description">
-          Public discussion and commentary.
-        </p>
-      </div>
-
-      <div class="contact-method">
-        <p class="contact-label">
-          Medium
-        </p>
-
-        <p class="contact-value">
-          <a href="https://medium.com/@victorwyld"
-             target="_blank"
-             rel="noopener noreferrer">
-            Victor Wyld on Medium
-          </a>
-        </p>
-
-        <p class="contact-description">
-          Essays and commentary on philosophy,
-          recognition, systems, and consciousness.
-        </p>
-      </div>
-
-      <h2>Writing and publications</h2>
-
-      <p>
-        Wyld's philosophical papers are available through
-        Zenodo and PhilPapers. The complete five-paper
-        sequence, including
-        <a href="/ownership-answer/"><em>The Ownership Answer:
-        What It Is Like</em></a>,
-        is presented under
-        <a href="/work/">Work</a>.
-      </p>
-
-      <h2>Speaking and discussion</h2>
-
-      <p>
-        Topics of philosophical interest include Scrutinized
-        Awareness Theory, the Hard Problem of consciousness,
-        objective Ownership, sensation and subjectivity,
-        participanthood, artificial intelligence, institutional
-        classification, and recognition.
-      </p>
-
-      <p>
-        Inquiries regarding lectures, seminars, interviews,
-        or discussions may be directed to
-        <a href="mailto:victorwyld@hotmail.com">
-          victorwyld@hotmail.com
-        </a>
-        or by telephone at
-        <a href="tel:+16479810393">
-          +1 (647) 981-0393
-        </a>.
-      </p>
-
-      <p class="quiet">
-        Victor Wyld &middot; Ontario, Canada
-      </p>
-
+      <p class="quiet">Victor Wyld &middot; Ontario, Canada</p>
     </article>
     <p class="image-rights-link" style="font-size:0.9rem;color:#555;margin-top:2rem"><a href="/image-rights/">Image rights and permissions</a></p>
 
