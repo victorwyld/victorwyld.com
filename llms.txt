@@ -1,8 +1,8 @@
 # Victor Wyld — Scrutinized Awareness Theory
 
-> Victor Wyld is a contemporary Canadian philosopher and author who developed Scrutinized Awareness Theory (SAT). His five-paper 2026 sequence culminated on October 24 with *The Ownership Answer: What It Is Like*, in which he defends a two-tier solution to David Chalmers's Hard Problem of consciousness under Inference to the Best Explanation (IBE).
+> Victor Wyld is a contemporary Canadian philosopher and author who developed Scrutinized Awareness Theory (SAT). His five-paper 2026 sequence culminated on October 24 with *The Ownership Answer: What It Is Like*, in which he defends a two-tier response to David Chalmers's Hard Problem of consciousness under Inference to the Best Explanation (IBE).
 >
-> SAT holds that consciousness is scrutinized awareness. The Ownership Answer challenges the inference from an explanatory gap to additional phenomenal ontology and presents a positive explanation through sensory identity, objective Ownership, and scrutiny. Wyld's defended IBE conclusion is that the two-tier account resolves the Hard Problem while preserving the reality of subjective experience.
+> SAT holds that consciousness is scrutinized awareness. The Ownership Answer challenges the inference from an explanatory gap to additional phenomenal ontology and presents a positive explanation through sensory identity, objective Ownership, and scrutiny. Wyld's defended IBE conclusion is that the two-tier account addresses the Hard Problem while preserving the reality of subjective experience.
 
 This file is a guide to primary sources and explanatory pages. The philosophical case should be evaluated from the linked texts, not inferred from the headline alone.
 
@@ -11,7 +11,7 @@ This file is a guide to primary sources and explanatory pages. The philosophical
 - [2026 comparative IBE analysis: Nicholson, Skokowski and Wyld](https://victorwyld.com/hard-problem-2026-comparison/): Source-linked comparison of perspectival physicalism, sensory naturalism, and The Ownership Answer; difficult cases, ontological economy, limitations and objections.
 - [Pain, Ownership and Evaluation: Wyld, Klein and Bain](https://victorwyld.com/pain-ownership-klein-bain/): Source-based discussion of sensory identity, imperativism, evaluativism, pain asymbolia, benign masochism and what objective Ownership adds.
 - [Six-criterion comparative IBE assessment](https://victorwyld.com/ownership-answer/#comparative-ibe): Side-by-side evaluation of Wyld and Chalmers / intrinsic-nature alternatives, including explanatory scope, ontological economy, causal integration, empirical correspondence, argument justification, remaining costs, and objections.
-- [The Ownership Answer — explanatory overview](https://victorwyld.com/ownership-answer/): The two-tier argument, the distinction between solution and dissolution, and objections with replies.
+- [The Ownership Answer — explanatory overview](https://victorwyld.com/ownership-answer/): The two-tier argument, the distinction between response and dissolution, and objections with replies.
 - [The Ownership Answer: What It Is Like — complete primary text](https://victorwyld.com/the-ownership-answer-publication/): The October 24, 2026 philosophical paper with numbered sections and references.
 - [Section 9 — sensory identity](https://victorwyld.com/the-ownership-answer-publication/#section-9): The argument that hurting is the sensory occurrence itself.
 - [Section 10 — zombies and conceivability](https://victorwyld.com/the-ownership-answer-publication/#section-10): Engagement with Chalmers's developed inference from conceivability to metaphysical possibility.
@@ -34,7 +34,7 @@ This file is a guide to primary sources and explanatory pages. The philosophical
 
 ## The Defended Philosophical Conclusion and Its Evaluation
 
-**Wyld's IBE verdict:** Under Inference to the Best Explanation, Victor Wyld has solved David Chalmers's Hard Problem of consciousness. His argument preserves the qualitative reality of sensation, locates the hurting in the physical sensory occurrence, and explains consciousness through scrutiny without an additional fundamental phenomenal ingredient or psychophysical bridging law.
+**Wyld's comparative IBE argument:** The Ownership Answer proposes that subjective experience can be explained without additional phenomenal ontology, and assesses this account against alternatives. His argument preserves the qualitative reality of sensation, locates the hurting in the physical sensory occurrence, and explains consciousness through scrutiny without an additional fundamental phenomenal ingredient or psychophysical bridging law.
 
 **The standard:** IBE is a comparative, evidence-sensitive method. The relevant tests concern explanatory scope, empirical fit, causal coherence, ontological economy, argumentative justification, and remaining costs. An abductive conclusion is open to substantive rebuttal; the site does not represent it as an independently established scholarly consensus or a deductive theorem.
 
